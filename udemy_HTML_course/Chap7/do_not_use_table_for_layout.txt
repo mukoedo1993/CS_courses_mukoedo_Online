@@ -1,0 +1,5 @@
+Do not use table for layout txt!
+
+Use tables for tabular data only.
+
+CSS for web design.
