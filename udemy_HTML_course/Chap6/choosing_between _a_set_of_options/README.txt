@@ -8,3 +8,8 @@ When there are fewer choices...
 
 
 3: Checkbox
+
+
+4: fieldset element:
+It is a set of field that inheriently related
+to one another.
