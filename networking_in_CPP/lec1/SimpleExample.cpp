@@ -3,6 +3,11 @@
 #include<asio.hpp>
 #include <asio/ts/buffer.hpp>   //t will handle the movement of memory for us.
 #include <asio/ts/internet.hpp> // It prepares asio for all of the things we need to do network programming.
+
+// We use a reasonable large buffer vector here.
+std::vector<char> vBuffer(20 * 1024);
+
+
 int main(int  argc, char** argv)
 {
     
@@ -40,18 +45,46 @@ int main(int  argc, char** argv)
     {
         // It means I have an active and survive action to the sth at the other end.
         const std::string sRequest = 
-            "GET /index.html HTTP/1.1\r\r"
+             "GET /index.html HTTP/1.1\r\n"
              "Host example.com\r\n"
              "Connection: close\r\n\r\n"; 
              // We will use the form above to send some information to the server.
 
         socket.write_some(asio::buffer(sRequest.data(), sRequest.size()), ec);
 
+// Bad practices: we don't want to wait for 200ms at each time.
+ /*!
+        //We need to give our server sometime to wait.
+        //hard-coded delay for your program.
+        using namespace std::chrono_literals;
+
+        //This namespace groups a set of functions that access the current thread. this_thread
+        std::this_thread::sleep_for(200ms);
+!*/
+
+        // But, remember, there are two problems.
+        // When the we leave our program, we will lose our control.
+        socket.wait(socket.wait_read);
+
         //Once we have written sth to the server, we hope that we could get sth being sent back.
         size_t bytes = socket.available();
         std::cout << "Bytes Available: " << bytes << std::endl;
-        
+
+
+    if (bytes > 0)
+    {
+        std::vector<char> vBuffer(bytes);
+        socket.read_some(asio::buffer(vBuffer.data(), vBuffer.size()), ec);
+
+        for (auto c : vBuffer)
+            std::cout << c;
+
+
     }
+  }
+
+
+
   }
   else
   {
