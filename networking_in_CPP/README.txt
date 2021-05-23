@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=2hNdkYInj4g
 
-lec 1 28:09
+lec 1 32:59
 
 
 Note1:
@@ -21,3 +21,12 @@ messages: two primary components:
 2: body -> zero or more bytes.
 serialize and deserialize conveniently... also... 
 So, we will never read a message with unknown sizes.
+
+enum class {
+    FireBullet
+    MovePlayer
+};
+
+message<GAME> msg;
+msg << x << y
+msg >> x >> y
