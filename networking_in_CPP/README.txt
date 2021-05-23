@@ -1,7 +1,23 @@
 https://www.youtube.com/watch?v=2hNdkYInj4g
 
-lec 1 15:35
+lec 1 28:09
 
 
 Note1:
 We need to let server to have enough time to read something.
+
+
+conclusion of *2.cpp
+As you can see in this very simple example, thinking asynchronously
+does provide some benefits, but it's not without its own costs of complexity.
+parse the header and primer buffers accordingly.
+
+
+
+netWork project:
+
+messages: two primary components:
+1: header<template>(fixed size) -> identifier(customized enum class) & size(bytes)
+2: body -> zero or more bytes.
+serialize and deserialize conveniently... also... 
+So, we will never read a message with unknown sizes.
