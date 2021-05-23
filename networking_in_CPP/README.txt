@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=2hNdkYInj4g
 
-lec 1 44:00
+lec 1 45:00
 
 
 Note1:
@@ -34,3 +34,7 @@ enum class {
 message<GAME> msg;
 msg << x << y
 msg >> x >> y
+
+
+figure 1:
+To make sure Q is on our control.
