@@ -22,6 +22,10 @@ messages: two primary components:
 serialize and deserialize conveniently... also... 
 So, we will never read a message with unknown sizes.
 
+server's roles:
+1: allows information to interchange between clients.
+2: Run the game itself.
+
 enum class {
     FireBullet
     MovePlayer
