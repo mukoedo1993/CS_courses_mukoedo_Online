@@ -1,0 +1,35 @@
+h1 {
+    color:orange;
+    text-align: center;
+}
+
+
+header p {
+    color: green;
+    
+}
+/*
+use a span...
+*/
+
+header p span {
+    color: blue;
+}
+
+
+/*!
+To make second paragraph a yellow
+background... But, type selector and descendent selectors cannot work here...
+Because, there is no way that either two could distinguish it from first paragraph and 
+third paragraph...
+!*/
+
+/*class selector*/
+.highlight {
+    background-color: yellow;
+}
+
+/*a mixture of descendent element and class element*/
+footer .highlight {
+    background-color: lightgray;
+}
