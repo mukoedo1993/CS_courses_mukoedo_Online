@@ -37,4 +37,19 @@ msg >> x >> y
 
 
 figure 1:
-To make sure Q is on our control.
+To make sure Q is on our control (thread-safe.)
+
+
+client has only one connection which is connected to the server.
+
+
+
+Q:
+a thread-safe queue.
+
+Server application:
+needs to know where my message came from.
+The things that identifies a client is the connection.
+So, adding a modified message type...
+But, client will only have one connection which invariably connects to the server...
+
