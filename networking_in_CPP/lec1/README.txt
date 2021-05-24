@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=2hNdkYInj4g
 
-lec 1 45:00
+lec 1 finished
 
 
 Note1:
