@@ -34,3 +34,32 @@ So, we need to float not only main-area element but also sidebar element here.
     width: 34%;
     float: left;
 }
+/*!
+Question 1:
+main-area:width 66% and sidebar::width 34%, why?
+Just to add up to 100% so that to make use of all the available width.
+
+
+*/
+
+.fix{
+    clear: both;
+}
+
+/*
+clear fix method:
+It works for every browser.
+*/
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
