@@ -13,14 +13,19 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #FFF;/*white*/
-    padding-left: 40px;/*40 px for columns padding look good.*/
+    /*!40 px for columns padding look good.!*/
+    
+    padding-left: 40px;
     padding-right: 40px;
+    
     box-sizing: border-box;/*Let the browser notice that you shouold use max width as actual box size here.*/
 }
 
 header {
+    /*
     padding-top: 20px;
     padding-bottom: 20px;
+    */
     color: #33cc33;
 }
 
@@ -52,9 +57,17 @@ header p {
 .site-nav li {
     list-style: none;
     float: left;
+    margin-right: 5px;
+    /*margin between each link 5 pixels.*/
 }
 /* End Site Navigation*/
 .site-nav a{
+    /*!
+    We want to overwrite the default behavior,
+    */
+    display: block;/*We want the link to be block-level element.
+    It can receive vertical padding, and the content around it
+    will be aware of that padding.*/
     color: #617140;
     text-decoration: none;
     padding: 10px 20px;
@@ -66,8 +79,13 @@ header p {
 
 
     border: 3px solid #e5e9dc;
+    border-bottom: none;/*make two parts close to each other with zero distance.*/
 }
 
+.site-nav a:hover {/*pseudo selector.*/
+    background-color: pink;
+    /*So, when*/
+}
 
 
 .content-area {
