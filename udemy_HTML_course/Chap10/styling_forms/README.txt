@@ -10,12 +10,29 @@ and even set its visibility to hidden. So, this way the label is hidden-label wi
 
 
 Sidenote 3:
+pseudo-class:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
 
 
+Sidenote 4:
 attribute type selectors:
+https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
 Allow us to not dirty up our HTML with unnecssary classes.
 
 
+Sidenote 5:
+WE DON'T ALWAYS HAVE 100 PERCENT CONTROL OVER SELECT ELEMENT BEING STYLIED.
+
+Sidenote 6:
+droplist is crazy. 
+
+Sidenote 7:
+OS / Browser Combos
+
+Sidenote 8:
+Of course, you want to keep your code clean. But feel free to use class attribute when needed.
+
+Actually, the course of HTML was recorded in 2014. Today's browser are much smarter.
 
 
 English-learning:

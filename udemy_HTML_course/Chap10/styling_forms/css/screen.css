@@ -150,7 +150,7 @@ table td {
 This pseudo-selector will grab every other table 
 */
 table tbody tr:nth-child(odd) td{
-    background-color: green;
+    background-color: rgb(0,128,0);
     /*all odd number of rows follow this rule.*/
 }
 
@@ -212,21 +212,35 @@ form{
 }
 
 
+input,
+select {
+    font-family:Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+select {
+    /*force firefox and chromium to do same */
+    -webkit-appearance: none;
+    -webkit-border-raidus: 0;
+    border-radius: 0;
+}
+
 input[type="email"],
 input[type="password"],
 input[type="text"], 
 input[type="number"], 
-input[type="tel"] {
+input[type="tel"],
+select {
     /*So, here, email makes its own row.*/
     width: 100%;
     display: block;
     box-sizing: border-box;
     padding: 0 10px;
     height: 40px;
-    font-family:Tahoma, sans-serif;
-    font-size: normal;
     margin-bottom: 15px;
     border: 1px solid #CDCDCD;/*light gray*/
+    outline: none;/*email, password, doesn't have line. But the select button
+    still does.*/
 }
 
 
@@ -235,8 +249,33 @@ input[type="password"]:focus,
 input[type="text"]:focus, 
 input[type="number"]:focus, 
 input[type="tel"]:focus{
-    border: 1px, solid, #869980;
-    box-shadow: inset, 2px, 2px;
+    border: 1px solid #869980;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+
+input[type="submit"]{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color:white;
+    padding: 10px 0;
+    border: 1px solid #798A56;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+    border: 1px solid #535e38;
+    background-color: #798A56;    
+}
+
+.checkbox-text {
+    font-size: 85%;
+    color: #777;/*medium gray*/
 }
 
 .sidebar{
