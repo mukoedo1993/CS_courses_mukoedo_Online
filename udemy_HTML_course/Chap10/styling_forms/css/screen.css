@@ -1,0 +1,275 @@
+
+html {
+    background-color: #869960;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 85%;
+}
+
+
+.container{ 
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;/*white*/
+    /*!40 px for columns padding look good.!*/
+    
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    box-sizing: border-box;/*Let the browser notice that you shouold use max width as actual box size here.*/
+}
+
+header {
+    /*
+    padding-top: 20px;
+    padding-bottom: 20px;
+    */
+    color: #33cc33;
+}
+
+header h1 {
+    margin: 0;
+     /*remove its margin*/
+
+
+    font-weight: normal;
+    font-size:normal;
+   
+}
+
+header p {
+    margin: 0;
+    /*remove its margin as well*/
+}
+
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+    /*margin between each link 5 pixels.*/
+}
+/* End Site Navigation*/
+.site-nav a{
+    /*!
+    We want to overwrite the default behavior,
+    */
+    display: block;/*We want the link to be block-level element.
+    It can receive vertical padding, and the content around it
+    will be aware of that padding.*/
+    color: #617140;
+    text-decoration: none;
+    padding: 10px 20px;
+
+    /*
+    So while we are targeting the link elements we will add a property
+...
+    */
+
+
+    border: 3px solid #e5e9dc;
+    border-bottom: none;/*make two parts close to each other with zero distance.*/
+}
+
+.site-nav a:hover {/*pseudo selector.*/
+    background-color: pink;
+    /*So, when*/
+}
+
+
+.content-area {
+    border-top: 3px solid #e5e9dc;
+    border-bottom: 3px solid #e5e9dc;
+}
+
+
+
+
+
+    /*So that, here, the inter-border spacing will be 0px,
+    and two borders will collpase into one.*/
+    /*
+    when border-spacing is 0, then:
+    	Borders are collapsed into a single border 
+        when possible (border-spacing and empty-cells properties have no effect)
+    */
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+
+.col-claimed-territory{
+    width: 60%;
+}
+.col-quantity {
+    width: 20%;
+}
+.col-population{
+    width: 20%;
+}
+
+
+/*Table styles*/
+table th {
+    text-align: left;
+    background-color: #869960;
+    color: #FFF;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .4);
+}
+
+table th,
+table td {
+    border: 1px solid #869960;
+    padding: 10px;
+    vertical-align: top;/*default value is middle here.*/
+
+
+    /*vertical property*/
+    /*Sometimes a line's cell might be too large so that it will more lines than other cells within 
+    the line. You could overwrite vertical here.*/
+
+}
+
+/*
+This pseudo-selector will grab every other table 
+*/
+table tbody tr:nth-child(odd) td{
+    background-color: green;
+    /*all odd number of rows follow this rule.*/
+}
+
+
+
+/*A better equivalent for the one in README.txt[1]...*/
+table.separatist-list tr:nth-child(2),
+table.separatist-list tr:nth-child(3) {
+    text-align: center;
+}
+
+
+
+
+ .big-head{
+     text-align: central;
+    background-color: red;
+    padding-left: 18%;
+}
+
+
+.big-head:before,
+.big-head:after {
+    content: "";
+    display: table;
+}
+
+.big-head:after {
+    clear: both;
+}
+
+.big-head {
+    zoom: 1;
+}
+
+
+
+.main-area {
+    width: 66%;/*Only take 66% of the width*/
+    float: left;/*tell the main area to float to the left*/
+    padding-right: 40px;
+    box-sizing: border-box;
+
+}
+
+
+/* Form Styles*/
+form{
+    background-color: #ECECEC;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+
+input[type="email"],
+input[type="password"],
+input[type="text"], 
+input[type="number"], 
+input[type="tel"] {
+    /*So, here, email makes its own row.*/
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family:Tahoma, sans-serif;
+    font-size: normal;
+    margin-bottom: 15px;
+    border: 1px solid #CDCDCD;/*light gray*/
+}
+
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+input[type="tel"]:focus{
+    border: 1px, solid, #869980;
+    box-shadow: inset, 2px, 2px;
+}
+
+.sidebar{
+    width: 34%;
+    float: left;
+    background-color: #e5e9dc;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #999;/*lighter gray*/
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
