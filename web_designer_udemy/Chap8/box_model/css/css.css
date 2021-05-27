@@ -1,0 +1,58 @@
+/*!
+To learn how boxes are formed in this course.
+*/
+
+.box-a {
+    background-color: LightGray;
+    padding: 30px;
+    /*
+    make box-a sits 30 pixels from the top
+    of the box where we can see the background color begins
+    and it sits 30 pixels from the left of where the content
+    begins. Not only bottom, but also top, and also left and
+    right.
+    */
+
+    border: 3px solid black;
+    /*!
+    thickness 3 pixels,
+    solid line.
+    color is black.
+    !*/
+
+    margin-bottom: 20px;
+    /*
+    So, Box-A will have a margin of 20 pixels down of its box.
+    */
+
+
+    /*width and height of the box*/
+    width: 250px;
+    height: 150px;
+
+    /* It shrinks if you don't comment it.*/
+    /*
+    Using a web browser that hasn't been updated since 2008 or 
+    2009 this property will not work.
+    */
+    box-sizing: border-box;
+    /*
+    It tells the browser that you have padding, border or margin.
+    And browser will smartly adjust the size of box.
+    */
+
+}
+
+
+.box-b {
+    background-color: orange;
+    /* 
+    width: 316px;
+    */
+    /*250 + 30 + 30 + 3 px + 3px = 316px*/
+    /*identical to box-a in width*/
+
+
+    width : 250px;
+    height: 150px;
+}
