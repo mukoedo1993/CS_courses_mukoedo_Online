@@ -14,4 +14,4 @@ during the running of a computer program without interrupting the run.<br>
 Example screenshot is taken here.
 Please see.
 ![painted_image](Inspecting_elements/chrome_dev1.png)
-![painted_image1](Inspecting_element/chrome_dev2.png)
+![painted_image](Inspecting_elements/chrome_dev2.png)
