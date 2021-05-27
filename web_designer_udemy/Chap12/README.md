@@ -13,5 +13,5 @@ during the running of a computer program without interrupting the run.<br>
 # Screenshot #
 Example screenshot is taken here.
 Please see.
-![painted_image](chrome_dev1.png)
-![painted_image](chrome_dev2.png)
+![painted_image](Inspecting_elements/chrome_dev1.png)
+![painted_image](Inspecting_element/chrome_dev2.png)
