@@ -1,6 +1,6 @@
 
 
-Conclusions:
+Conclusions:<br>
 1: Tracking down where properties are coming from<br>
 2: Experimenting of troubleshooting<br>
 3: Inspiration from other websites.<br>
