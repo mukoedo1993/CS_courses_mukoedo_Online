@@ -24,3 +24,18 @@ space between each letter.
 
 word-spacing:
 space between each word (on the basis of letter-spacing).
+
+text-shadow:
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
+
+
+text-align:
+justify: almost newspaper's heading effect
+
+
+line-height:
+https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!40TH COURSE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

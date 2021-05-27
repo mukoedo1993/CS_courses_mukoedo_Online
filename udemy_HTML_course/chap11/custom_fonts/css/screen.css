@@ -4,12 +4,66 @@ html {
 }
 
 body {
-    font-family: Tahoma, sans-serif;
+    font-family: 'PTSans',Arial,sans-serif;
     font-size: 85%;
     /*
     The element selector here will influence entire page.
     */
 }
+
+
+/* Custom Fonts 41ST COURSE*/
+@font-face {
+    font-family: 'PTSans';
+    src: url('fonts/PT-Sans.eot');
+    /*copy and paste okay here.*/
+    src: url('fonts/PT-Sans.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PT-Sans.woff')format('woff'),
+    url('fonts/PT-Sans.ttf')format('truetype')
+    url('fonts/PT-Sans.svg#pt_sansregular')format('svg');
+    font-weight:normal;
+    font-size:normal;
+}
+/* End Custom Fonts*/
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('fonts/PT-Sans-Bold.eot');
+    /*copy and paste okay here.*/
+    src: url('fonts/PT-Sans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PT-Sans-Bold.woff')format('woff'),
+    url('fonts/PT-Sans-Bold.ttf')format('truetype')
+    url('fonts/PT-Sans.Bold.svg#pt_sansregular')format('svg');
+    font-weight:bold;
+    font-size:normal;
+}
+
+
+@font-face {
+    font-family: 'PTSans';
+    font-weight: normal;
+    font-style: italic;
+    src: url('fonts/PT-Sans-Italic.eot');
+    /*copy and paste okay here.*/
+    src: url('fonts/PT-Sans-Italic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PT-Sans-Italic.woff')format('woff'),
+    url('fonts/PT-Sans-Italic.ttf')format('truetype')
+    url('fonts/PT-Sans.Italic.svg#pt_sansregular')format('svg');
+}
+
+@font-face {
+    font-family: 'PTSans';
+    font-weight: bold;
+    font-style: italic;
+    src: url('fonts/PT-Sans-Italic.eot');
+    /*copy and paste okay here.*/
+    src: url('fonts/PT-Sans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('fonts/PT-Sans-BoldItalic.woff')format('woff'),
+    url('fonts/PT-Sans-BoldItalic.ttf')format('truetype')
+    url('fonts/PT-Sans.BoldItalic.svg#pt_sansregular')format('svg');
+}
+
+
 
 a {
     text-decoration: none;
