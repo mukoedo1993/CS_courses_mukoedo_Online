@@ -1,0 +1,15 @@
+DB
+Derek
+3 years ago
+6
+6 upvotes
+Sorry, should have searched the answers first. I added outline: none; and that eliminated the blue border. Curious about why outline: hidden; did not work.
+
+Rostislav Valouch
+Rostislav
+3 years ago
+7
+7 upvotes
+Hi, here you can get some info about outline https://www.w3schools.com/css/css_outline.asp , when you change code in there you can see hidden and none is working properly, you can also try to use the normalised.css  to reset web browsers so they all act almost same. download here https://necolas.github.io/normalize.css/
+
+if you need any more help share your code please
