@@ -74,12 +74,23 @@ a {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFF;/*white*/
+    /*
+    background-color: #FFF;
+    */
+    /*white*/
     /*!40 px for columns padding look good.!*/
-    background-image: url(../icon.png);
-    background-size: 2%;
-    background-repeat: repeat-x;
     
+
+    /*
+    DIFFERENT LAYERS
+    background layers could
+    */
+    background:url(../icon.png) left bottom repeat-x,
+    #FFF url(../icon.png) left top repeat-x;/*overlapped by preceding layers*/
+    background-size: 2%;
+    /*
+    background-repeat: repeat-x;
+    */
     
     
   
@@ -124,7 +135,7 @@ header p {
 }
 
 .site-nav {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .site-nav ul{
@@ -149,7 +160,9 @@ header p {
     will be aware of that padding.*/
     color: #617140;
     text-decoration: none;
-    padding: 25px 20px;
+    padding: 10px 20px;
+
+    background-color: #FFF;
 
     /*
     So while we are targeting the link elements we will add a property
@@ -159,6 +172,29 @@ header p {
 
     border: 3px solid #e5e9dc;
     border-bottom: none;/*make two parts close to each other with zero distance.*/
+}
+
+.birds {
+  
+    height: 20em;
+    /*
+    Reserve 20 lines.
+    */
+    text-align: center;
+  
+    background: #c2bbb1 url(../bird.jpg) no-repeat center center;
+    
+   /*https://www.w3schools.com/css/css_background_shorthand.asp*/
+    /*
+      background-color: #c2bbb1;
+    background-image: url(../bird.jpg);
+    background-position: center center;
+    
+    background-repeat: no-repeat;
+
+    */
+    background-size: cover;
+    
 }
 
 .site-nav a:hover {/*pseudo selector.*/
@@ -302,7 +338,7 @@ table.separatist-list tr:nth-child(3) {
 /* Form Styles*/
 form{
     background-color: #ECECEC;
-    padding: 30px 40px;
+    padding: 10px 20px;
 }
 
 .hidden-label {
