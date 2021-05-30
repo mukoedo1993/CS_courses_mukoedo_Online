@@ -13,6 +13,5 @@ lg = Large( desktop large monitor)
 
 
 
-PLAN: REPEAT THE CODE AT EACH LINE AT 
-https://codepen.io/learnwebcode/pen/BmWrwM?editors=1100
-THEN WATCH THE VIDEO.
+PLAN:
+WATCH THE VIDEO.
