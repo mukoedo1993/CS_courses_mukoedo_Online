@@ -201,11 +201,25 @@ header p {
 /* Grid */
 .row {
     margin-right: -20px;
+    /*
+    It is related to the padding we've just added.
+    */
 }
 
+
+/*
+That way the padding does not adjust the overall calculated width
+of the elements.
+*/
 .col {
     width: 100%;
     float: left;
+
+
+
+    /*
+    
+    */
     padding-right: 20px;
     box-sizing: border-box;
 }

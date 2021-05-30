@@ -1,0 +1,14 @@
+Course 50:
+
+The use of CSS float property does have a More
+modern alternative nowadays, and it's something called
+flex box.
+
+
+e.g:
+.row {
+    display: flex;
+    flex-wrap: rwap;
+}
+The div with the class of row now says display flex
+and then the actual columns, they are no longer floated to the left.

@@ -13,5 +13,50 @@ lg = Large( desktop large monitor)
 
 
 
-PLAN:
-WATCH THE VIDEO.
+<row> for any row, <col> for any column.
+
+
+cheatsheet:
+.col-xs-11 {
+    width: 91.662%;
+}
+
+.col-xs-10 {
+    width: 83.332%;
+}
+
+.col-xs-9 {
+    width: 75%;
+}
+
+.col-xs-8 {
+    width: 66.662%;
+}
+
+.col-xs-7 {
+    width: 58.331%;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-5 {
+    width: 41.662%;
+}
+
+.col-xs-4 {
+    width: 33.332%;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-2 {
+    width: 16.662%;
+}
+
+.col-xs-1 {
+    width: 8.332%;
+}
