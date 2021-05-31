@@ -1,5 +1,80 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+
+input {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+}
+
+
+body {
+    background-color: #BBB;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 100px;
+}
+
+
+h2, h3 {
+    margin: 0 0 .75em 0;
+}
+
+
+/*first example*/
+.container {
+    max-width: 750px;
+    margin: 20px auto 0 auto;
+    padding: 30px;
+    background-color: #FFF;
+}
+
 .form-row {
     padding: 10px 0;
+    display: flex;
+
+}
+
+.form-row label {
+    padding-right: 10px;
+    
+}
+
+.form-row input {
+    flex: 1;
+}
+
+
+
+    /*!Without writing any other code, 
+    just put display in the container
+    display: flex;
+    */
+
+.column-layout {
+    max-width: 1000px;
+    background-color: #FFF;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+
+    display: flex;
+}
+
+
+/*!
+We want the main column to be third as large
+as sidebar.
+*/
+.main-column {
+    flex: 3;
+    order: 2;
+}
+
+.form-row {
+    padding: 10px 0;
+    display: flex;
 }
 
 
@@ -8,5 +83,86 @@
 }
 
 .form-row input {
-    
+    flex: 1;
 }
+
+.sidebar-one  {flex:1;
+order: 1;}
+.sidebar-two {flex:1;
+order: 3;}
+
+
+
+.call-outs-container {
+
+
+}
+/*
+align-items: flex-start: fixed starting position
+align-items: flex-end fixed ending position
+...: none forced justify at both starting position and ending position
+...: center centered-vertically
+...: stretch == NONE
+*/
+/*
+justify-content: flex-start: justify content to the left
+...: flex-end: ... to the right
+...: center: ... center
+...: 
+*/
+
+
+@media (min-width: 900px) {
+    .call-outs-container{
+        max-width: 1400px;
+        margin: 40px auto 0 auto;
+        align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    }
+    .call-out {
+        padding: 20px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        width: 30%;/*column takes up 90 percent of width , 10 percent will be left with margin.*/
+        flex-basis: 30%;
+    }
+}
+@media (max-width: 899px) {
+    .call-outs-container{
+     width: 100%;
+    }
+    .call-out {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+}
+
+
+
+
+
+/*
+
+flex-box way to specify a particular size.
+flex-basis:
+*/
+
+
+
+
+
+
+
+
+.call-out:last-child {
+  
+}
+
+/*Note that even though each child has different size of content, they work in the same way.*/
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: pink;}
