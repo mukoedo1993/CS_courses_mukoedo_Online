@@ -170,6 +170,103 @@ header p {
     box-sizing: border-box;
 }
 
+.image-banner {
+    position: relative;
+    margin-bottom: 40px;
+    overflow: hidden;
+    
+    /*
+    If a child element has flowed out of parent's boundary, then, it might be 
+    hidden.
+    */
+  
+}
+
+.image-banner img {
+
+    display: block;
+    
+    /*
+    transition-property: all;
+    transition-duration: 1s;
+    */
+    transition: all 1s;
+    
+  
+}
+
+.image-banner:hover img {
+    transform: scale(1.5);
+}
+
+.banner-description {
+    width: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    background-color: rgba(0, 0, 0, .65);
+    padding: 15px 25px;
+    /*COURSE 56 */
+    /*css transitions*/
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 3s;
+    transform: translateY(100%);
+ 
+}
+
+.image-banner:hover .banner-description {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.box-b {
+    text-align: center;
+    background-color: #ccc;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    /*course 56th*/
+    transition: all 1s;
+
+    /*
+    acceleration and deacceleration of transition:
+    */
+    transition-timing-function: linear;
+}
+
+.box-b:hover{
+    position: relative;
+    transform: rotate(360deg);
+}
+
+.box-c {
+    text-align: center;
+    background-color: #ccc;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    /*course 56th*/
+    transition: all 1s;
+
+    /*
+    acceleration and deacceleration of transition:
+    start slow, then accelerate...
+    in: accelerate out: de-accelerate:
+    */
+    transition-timing-function: ease-in;
+}
+
+.box-c:hover{
+    position: relative;
+    transform: rotate(360deg);
+}
+
 .sidebar {
     color: #999;
     font-size: 85%;
@@ -413,21 +510,22 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
 }
-
-.row:before,
-.row:after,
-.group:before,
-.group:after {
+.banner-description:before,
+.banner-description:after,
+.banner-description:before,
+.banner-description:after,
+.banner-description:before,
+.banner-description:after {
     content: "";
     display: table;
 }
-
+.banner-description:after,
 .row:after,
 .group:after {
     clear: both;
 }
-
-.row
+.banner-description,
+.row,
 .group {
     zoom:1;
 }
