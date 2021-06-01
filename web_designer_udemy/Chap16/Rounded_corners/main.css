@@ -250,33 +250,47 @@ in half.
     margin-bottom: 30px;
     box-shadow: 10px 2px 5px #000;
 }
-
 .box-a-1 {
     box-shadow: 10px 2px 5px #000;
+    border-radius: 10px;
+/*See box 1 for all four corners*/
 }
 
 .box-b {
     box-shadow: inset 3px 3px 5px rgba(0, 0, 0, .45), -10px 2px 5px #000;
+    border-radius: 35px 10px;
+    /*see box 2
+    first value: top-left and bottom-right
+    second value: top-right and bottom-left; */
 }
 
 .box-c {
     box-shadow: inset -10px -2px 5px rgba(0, 0, 0, .45);
     /*Pushes the shadow inset.*/
+
+    border-radius: 10px 10px 25px 25px; /*start from top-right.
+    clockwise*/
 }
 
 .box-d {
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 10px/25px;/*a different shape ellipse horizontal radius vertical radius*/
 }
 
 .box-e {
+    width:200px;
+    height:200px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    line-height: 950%;
+    font-size: 20px;
 }
 
-/*
-https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
-box-shadow
-h-offset	Required. The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box	
-v-offset	Required. The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box	
-blur	Optional. The blur radius. The higher the number, the more blurred the shadow will be
-color: Optional
-*/
+.box-f {
+    border-radius: 30%/40%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .15);
+    border-radius: 50%;
+    line-height: 700%;
+    font-size: 15px;
+}
+
