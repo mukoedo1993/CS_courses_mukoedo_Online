@@ -1,0 +1,52 @@
+html {
+	background-color: #FFF;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	padding: 5px 17%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.example {
+	width: 240px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.example h3 {
+	margin: 0 0 8px 0;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+.example-a {
+	color: black;
+	background-color: #DDD;
+	transform: rotate(20deg) scale(1.2) skewX(3deg) translate(50px, -25px);
+	transform-origin: 0 0;
+}
+
+.example-b {
+	color: white;
+	background-color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+
+

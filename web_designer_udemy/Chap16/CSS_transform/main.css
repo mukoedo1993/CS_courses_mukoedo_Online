@@ -1,10 +1,94 @@
+html {
+    background-color: #fff;
+  }
+  
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    padding: 5px 17%;
+  }
+
+
 .example-a {
     color: black;
     background-color: #DDD;
     transform: rotate(25deg);
+    transform: scale(1.3);
 }
 
 .example-b {
     color: white;
     background-color: #444;
 }
+
+.example-c {
+    color: black;
+    background-color: #DDD;
+    transform: skewX(-25deg);/*skewX skew horizontally*/
+    /*skewY skew vertically*/
+}
+
+.example-d {
+    background-color: #DDD;
+    color: black;
+    transform: skewX(25deg) skewY(15deg);
+}
+
+.example-e {
+    background-color: #DDD;
+    color: black;
+    transform: skewX(25deg) skewY(15deg);
+    transform-origin: 0 0;/*
+    point of origin. Pivot point for the transform.
+    longitude and latitude for our points of origins.
+    */
+}
+
+.example-f {
+    background-color: #444;
+    color: black;
+    transform: scale(1.3);
+    transform-origin: 0 100%;/*
+    point of origin. Pivot point for the transform.
+    longitude and latitude for our points of origins.
+    */
+}
+
+.example-g1{
+    color: white;
+    background-color: #444;
+    
+}
+
+.example-g2{
+    color: white;
+    background-color: #444;
+    transform: translateY(-120px) translateX(100px);
+    
+    /**/
+}
+
+.example-g3{
+    color: white;
+    background-color: #444;
+    transform: translate(100px,-120px);
+
+    /* g3 and g2 are equivalent way for translations.*/
+}
+
+
+
+img {
+    max-width:100%;
+    height: auto;
+}
+
+.example{
+  width: 240px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  text-align: center;  
+}
+
+
