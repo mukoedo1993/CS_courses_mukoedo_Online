@@ -17,3 +17,22 @@ By default, the value of attribute data-cycle-slides is img, but you can overwri
 The two elements below are default locator for the previous and next button for slideshow.
                  <span class="cycle-prev">Previous</span>
                     <span class="cycle-next">Next</span>
+
+
+
+Then, we will add pagination dots which indicate the slide you are viewing.
+                    <span class="cycle-pager">&dot;</span>
+
+
+<div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+So that it will not automatically advance to the next slide.
+
+
+
+English learning:
+on the fly:
+during the running of a computer program without interrupting the run.
+e.g.: to handle the on the fly manipulation of the page and then leverage
+our own.
+--------------------------------------------------------------------------------------
+59th and 60th course!
