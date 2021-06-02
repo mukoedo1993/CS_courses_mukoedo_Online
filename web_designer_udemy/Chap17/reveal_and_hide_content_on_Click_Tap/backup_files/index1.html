@@ -1,0 +1,125 @@
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://malsup.github.io/jquery.cycle2.js"></script>
+<script src="http://learnwebcode.github.io/declarativeToggle/js/jquery.declarativeToggle.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+<header class="section">
+
+  <!-- container -->
+  <div class="container">
+    <h1>Website Title</h1>
+    <p class="hide-small">Website slogan included here.</p>
+
+    <span data-toggle-target=".site-nav" class="toggle-btn">MENU</span>
+
+    <nav class="site-nav">
+      <ul class="group">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li class="hide-small"><a href="#">FAQs</a></li>
+        <li class="hide-small"><a href="#">Links</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- /container -->
+
+</header>
+
+<div class="content-area group section">
+
+  <!-- container -->
+  <div class="container">
+
+    <!-- row -->
+    <div class="row">
+
+      <!-- col -->
+      <div class="col col-md-8 main-area push-down-sm">
+
+        <div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
+
+          <span class="cycle-prev">&laquo;</span>
+          <span class="cycle-next">&raquo;</span>
+
+          <span class="cycle-pager"></span>
+
+          <div class="slide">
+            <img src="https://learnwebcode.github.io/Web-Design-for-Beginners/bee.jpg" alt="Bee">
+
+            <div class="slide-text">
+              <h3>Bee Title Here!</h3>
+              <p>This is the caption or descriptive text for the bee slide. <a href="#" class="btn-a">Call to action!</a> </p>
+            </div>
+
+          </div>
+
+          <div class="slide">
+            <img src="https://learnwebcode.github.io/Web-Design-for-Beginners/duck.jpg" alt="Duck">
+
+            <div class="slide-text">
+              <h3>Duck Title Here!</h3>
+              <p>This is the caption or descriptive text for the duck slide.</p>
+            </div>
+
+          </div>
+
+          <div class="slide">
+            <img src="https://learnwebcode.github.io/Web-Design-for-Beginners/squirrel-slideshow.jpg" alt="Squirrel">
+
+            <div class="slide-text">
+              <h3>Squirrel Title Here!</h3>
+              <p>This is the caption or descriptive text for the squirrel slide.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <h2>Important Text</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span data-toggle-target=".full-text"
+            data-toggle-text="Hide the full text..." class="toggle-btn read-more">Read the full text...</span></p>
+
+        <!-- full-text -->
+        <div class="full-text">
+          <h2>Full Text</h2>
+
+          <p><strong>This is the full text</strong>, lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+
+          <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <!-- /full-text -->
+
+      </div>
+      <!-- /col -->
+
+      <!-- col -->
+      <div class="col col-md-4 sidebar">
+        <h3>Sidebar Heading</h3>
+        <p>Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit, sed do eiusmod.</p>
+      </div>
+      <!-- /col -->
+
+    </div>
+    <!-- /row -->
+
+  </div>
+  <!-- /container -->
+
+</div>
+
+<footer>
+  <p>&copy; 2017 - This is the footer.</p>
+</footer>

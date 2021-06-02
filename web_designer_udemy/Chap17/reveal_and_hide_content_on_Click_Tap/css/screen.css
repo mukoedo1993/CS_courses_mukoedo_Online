@@ -172,22 +172,8 @@ header p {
 
 
 
-.box-b {
-    text-align: center;
-    background-color: #ccc;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    margin-bottom: 40px;
-    border-radius: 50%;
-    transition: all 1s;
-    transition-timing-function: linear;
-}
 
-.box-b:hover{
-    position: relative;
-    transform: rotate(360deg);
-}
+
 
 /*59th course*/
 /*slideshow styles*/
@@ -291,30 +277,6 @@ header p {
 }
 
 /*end of course 59*/
-.box-c {
-    text-align: center;
-    background-color: #ccc;
-    width: 200px;
-    height: 200px;
-    line-height: 200px;
-    margin-bottom: 40px;
-    border-radius: 50%;
-    /*course 56th*/
-    transition: all 1s;
-
-    /*
-    acceleration and deacceleration of transition:
-    start slow, then accelerate...
-    in: accelerate out: de-accelerate:
-    */
-    transition-timing-function: ease-in;
-}
-
-.box-c:hover{
-    position: relative;
-    transform: rotate(360deg);
-}
-
 .sidebar {
     color: #999;
     font-size: 85%;
@@ -353,23 +315,58 @@ header p {
 
 /* Reveal and Hide Styles */
 /* COURSE 61 */
+@media screen and (min-width: 768px){
+
 .toggle-btn {
-
+     /*by default*/
+     display:none;
+     
+}
+.read-more {
+    display:none;
 }
 
+
+.main-area .toggle-btn-visible{
+    display: block;       /*if js file is loaded successfully*/
+    }
+    
+    .main-area .toggle-target-hidden {
+        display: none;       
+    }
+    
+    .main-area .toggle-target-expanded {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .read-more {
+        text-decoration: underline;
+        color: blue;
+        cursor: pointer;
+    }
+    .read-more:hover {
+        text-decoration: none;
+        color: blue;
+        cursor: pointer;
+    }
 .toogle-btn-visible {
-
+        display: block;       /*if js file is loaded successfully*/
+    }
+    
+    .toggle-target-hidden {
+        display: none;       
+    }
+    
+    .toggle-target-expanded {
+        display:block;
+    }
 }
 
-.toggle-target-hidden {
+    
 
-}
-
-.toggle-target-expanded {
-
-}
-
-
+/*END OF NEW PART OF COURSE 61*/
 
 
 /* Grid */
