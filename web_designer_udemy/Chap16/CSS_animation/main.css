@@ -223,6 +223,12 @@ header p {
     /*COURSE 57TH*/
     animation-name: fadeBounce;
     animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    /*
+    3 lines above equal to:;
+    animation: fadeBounce 1s forwards;
+    */
     /*COURSE 57TH*/
     background-color: #e7eff5;
     padding: 20px 20px 0 20px;
@@ -241,6 +247,72 @@ header p {
 .boxes :nth-child(4) .box-a{
     animation-delay:6s;
 }
+
+
+
+
+@-webkit-keyframes slideSpin {
+
+    50% {
+        transform: translateX(150%) scale(.5);
+    }
+
+    75% {
+        transform: translateX(150%) rotate(180deg) scale(.5);
+    }
+    100% {
+        transform: translateX(300%) rotate(180deg);
+        /*We don't want 75% -> 100% process to have any kind of rotation, so we also set here as 180deg of rotation.*/
+    }   
+}
+
+/**
+COURSE 57TH
+STAR ANIMATION
+*/
+@keyframes slideSpin {
+
+    50% {
+        transform: translateX(150%) scale(.5);
+    }
+
+    75% {
+        transform: translateX(150%) rotate(180deg) scale(.5);
+    }
+    100% {
+        transform: translateX(300%) rotate(180deg);
+        /*We don't want 75% -> 100% process to have any kind of rotation, so we also set here as 180deg of rotation.*/
+    }   
+}
+
+
+
+
+
+.star {
+    -webkit-animation: slideSpin 2s;
+    animation: slideSpin 2s; 
+    -webkit-animation-fill-mode: forwards;/*stay at the final position.*/
+    animation-fill-mode: forwards;/*stay at the final position.*/
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    /*
+    animation: slideSpin 2s infinite alternate forwards;
+    */
+    width: 25%;
+    height: auto;
+}
+
+
+
+/*
+!!!!!!!!!!!!END OF STAR ANIMATION!!!!!!!!!!!!!!!
+
+*/
+
+
 
 @media screen and (max-width: 767px) {
     .box-a {
