@@ -180,12 +180,7 @@ header p {
     line-height: 200px;
     margin-bottom: 40px;
     border-radius: 50%;
-    /*course 56th*/
     transition: all 1s;
-
-    /*
-    acceleration and deacceleration of transition:
-    */
     transition-timing-function: linear;
 }
 
@@ -194,6 +189,60 @@ header p {
     transform: rotate(360deg);
 }
 
+/*59th course*/
+/*slideshow styles*/
+.cycle-slideshow {
+    margin-bottom: 30px;
+}
+
+.slide {
+    width: 100%;
+    position: relative;
+}
+
+.slide img {
+    display: block;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 5px;
+    background-color:rgba(0,0,0,.7);
+    color: red;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; /*So that the element isn't larger than 100%*/
+}
+
+.slide-text h3{
+    margin: 0;
+}
+
+/*Prev and Next Buttons*/
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top:30%;
+    background-color: rgba(0,0,0,.35);
+    color: red;
+    padding: 1px 10px;
+    display: black;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+ 
+}
+.cycle-next {
+    right:0;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next{
+ opacity:1;
+}
+
+/*end of course 59*/
 .box-c {
     text-align: center;
     background-color: #ccc;
