@@ -321,26 +321,45 @@ header p {
 /*COURSE 62ND */
 /*thumbnail style*/
 /*END OF COURSE 62ND*/
+.thumbnails {
+    margin-right:40px;
+    margin-left: 40px;
+}
 .thumbnails a {
     float: left;
     width: 25%;
 
+    padding-right:15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+
 }
 
-.thumbnails a {
-   
-    margin-right:0 ;
-    margin-left:0 ;
-    padding-left:0;
-    padding-right:0;
-    
-    
+.thumbnails img {
+    display: block;
+    transition: all .2s ease-in-out;
 }
 
+.thumbnails:hover img{
+    opacity: .6;
+    transform: scale(.92);
+}
+
+.thumbnails img:hover {
+    opacity: 1;
+    transform: scale(1) rotate(2deg);
+    box-shadow: 0 0 7px rgba(0,0,.5);
+}
+
+
+    
+
+/*
 img {
     width: 100%;
     height: auto;
 }
+*/
 /*END OF THIS SNIPPET OF CODE FROM COURSE 62*/
 
 /* Grid */
