@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Learning CSS</title>
+    <!--
+        COURSE 48TH responsive web design
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/screen.css">
+
+</head>
+
+<body>
+    <!--Put JS files in body could speed up your loading.-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <header>
+
+
+
+        <div class="container">
+            <h1 class="jieti">Total dissolution of China</h1>
+            <p>Website slogan included here.</p>
+
+            <span data-toggle-target=".site-nav" class="toggle-btn">MENU</span>
+            <!--
+                When we click MENU, we want to see nav.
+                So,... COURSE 61
+            -->
+
+            <nav class="site-nav">
+                <ul class="group">
+                    <!--
+                        However, if all elements are floated, then, parent element ul, 
+                        doesn't have any idea of float. So, we need to add a class group here.
+                    -->
+                    <!-- Target of this course: to stylize these links so that they will look like well-designed menu bar.-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fact</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="content-area group section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- col -->
+                <div class="col col-md-8 main-area push-down-sm">
+                  <div class="all-thumbnails">
+                    <a href="images/bee.jpg"  data-lightbox="gallery">
+                        <img src="images/bee-thumb.jpg" alt="bee-thumb">
+                    </a>
+
+                    <a href="images/bear.jpg"  data-lightbox="gallery">
+                        <img src="images/bear-thumb.jpg" alt="bear-thumb">
+                    </a>
+
+                    <a href="images/dock.jpg"  data-lightbox="gallery">
+                        <img src="images/dock-thumb.jpg" alt="dock-thumb">
+                    </a>
+
+                    <a href="images/duck.jpg" data-lightbox="gallery">
+                        <img src="images/duck-thumb.jpg" alt="duck-thumb">
+                    </a>
+                    <a href="images/squirrel.jpg" data-lightbox="gallery">
+                        <img src="images/squirrel-thumb.jpg" alt="squirrel-thumb">
+                    </a>
+                    <a href="images/strawberry.jpg" data-lightbox="gallery">
+                        <img src="images/strawberry-thumb.jpg" alt="strawberry-thumb">
+                    </a>
+                    <a href="images/trees.jpg" data-lightbox="gallery">
+                        <img src="images/trees-thumb.jpg" alt="trees-thumb">
+                    </a>
+                    <a href="images/water.jpg" data-lightbox="gallery">
+                        <img src="images/water-thumb.jpg" alt="water-thumb">
+                    </a>
+                    <!--
+
+                       
+                   
+                    <img src="images/bee.jpg" alt="bee" data-lightbox="gallery">
+                    <img src="images/close.png" alt="close" data-lightbox="gallery">
+                    <img src="dock.png" alt="dock" data-lightbox="gallery">
+                    <img src="dock-thumb.png" alt="dock-thumb" data-lightbox="gallery">
+                    <img src="duck.png" alt="dock" data-lightbox="gallery">
+                    <img src="duck-thumb.png" alt="dock-thumb" data-lightbox="gallery">
+                    <img src="loading.gif" alt="loading" data-lightbox="gallery">
+                 
+-->
+</div>
+
+                    <div class="important-text">
+                        <h>Animals</h>
+                        <p>Animals (also called Metazoa) are multicellular eukaryotic organisms that form the biological
+                            kingdom Animalia.
+                            With few exceptions, animals consume organic material, breathe oxygen, are able to move, can
+                            reproduce sexually,
+                            and grow from a hollow sphere of cells, the blastula, during embryonic development.
+                            Over 1.5 million living animal species have been described—of which around 1 million are
+                            insects—
+                            but it has been estimated there are over 7 million animal species in total.
+                            Animals range in length from 8.5 micrometres (0.00033 in) to 33.6 metres (110 ft).
+                            They have complex interactions with each other and their environments, forming intricate
+                            food webs.
+                            The scientific study of animals is known as zoology.
+                            <!--data-toggle-text will be shown if you extend the content-->
+                            <span data-toggle-target=".full-text" class="toggle-btn read-more" data-toggle-text="Hide the full text">
+                                Read the full text</span></p>
+                    </div>
+
+                    <div class="full-text">
+                        <p>
+                            <b>The remaining animals,</b> the great majority—comprising some 29 phyla and over a million
+                            species—form a clade, the Bilateria.
+                            The body is triploblastic, with three well-developed germ layers, and their tissues form
+                            distinct organs.
+                            The digestive chamber has two openings, a mouth and an anus, and there is an internal body
+                            cavity, a coelom or pseudocoelom.
+                            Animals with this bilaterally symmetric body plan and a tendency to move in one direction
+                            have a head end (anterior) and a tail end (posterior) as well as a back (dorsal) and a belly
+                            (ventral); therefore they also have a left side and a right side.[115][116]
+                            Having a front end means that this part of the body encounters stimuli, such as food,
+                            favouring cephalisation, the development of a head with sense organs and a mouth. Many
+                            bilaterians have a combination of circular muscles that constrict the body, making it
+                            longer, and an opposing set of longitudinal muscles, that shorten the body;[116] these
+                            enable soft-bodied animals with a hydrostatic skeleton to move by peristalsis.[117] They
+                            also have a gut that extends through the basically cylindrical body from mouth to anus. Many
+                            bilaterian phyla have primary larvae which swim with cilia and have an apical organ
+                            containing sensory cells. However, there are exceptions to each of these characteristics;
+                            for example, adult echinoderms are radially symmetric (unlike their larvae),
+                            while some parasitic worms have extremely simplified body structures.[115][116]
+                            Genetic studies have considerably changed zoologists' understanding of the relationships
+                            within the Bilateria.
+                            Most appear to belong to two major lineages, the protostomes and the deuterostomes.[118] The
+                            basalmost bilaterians are the Xenacoelomorpha.
+                        </p>
+                    </div>
+
+
+                </div>
+                <!-- col -->
+                <div class="col col-md-4 sidebar">
+                    <h3>Sidebar Heading</h3>
+                    <p class="important-text2">Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                        <span data-toggle-target=".full-text2" class="toggle-btn2 read-more2" data-toggle-text="Hide the full text">
+                            Read the full text of sidebar</span></p>
+                    
+                    </p>
+                    <p class="full-text2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+
+                    <p>
+                        Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit, sed do eiusmod.
+                    </p>
+                </div>
+                <!-- /col -->
+
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+
+    </div>
+</body>
+    <footer>
+        <p>&copy; 2014 - This is the footer.</p>
+    </footer>
