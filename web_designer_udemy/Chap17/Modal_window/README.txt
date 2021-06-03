@@ -13,5 +13,15 @@ Lightbox by Lokesh DOkhar
  and when we click the image, high-resolution whole image will then pop out.
  Until now, it is all ok. JS file will be a polish.
 
+ We need to have lightbox.min.js, jquery.js and lightbox.css here.
+
+ The browser will search the element with the attribute data-lightbox, and then hijack the 
+ tap or click event. And instead, sending it to the new page to visit the image from the link.
+close.png, next.png, prev.png are also needed.
+
+ <a href="images/bee.jpg"  data-lightbox="gallery">
+                        <img src="images/bee-thumb.jpg" alt="bee-thumb">
+                    </a>
+
 References:
 [1]https://en.wikipedia.org/wiki/Modal_window

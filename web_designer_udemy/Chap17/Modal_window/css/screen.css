@@ -298,6 +298,7 @@ header p {
     margin-bottom: 1em;
 }
 
+
 @media screen and (max-width: 767px) {
     .hide-small {
         display: none;
@@ -318,6 +319,29 @@ header p {
 }
 
 /*COURSE 62ND */
+/*thumbnail style*/
+/*END OF COURSE 62ND*/
+.thumbnails a {
+    float: left;
+    width: 25%;
+
+}
+
+.thumbnails a {
+   
+    margin-right:0 ;
+    margin-left:0 ;
+    padding-left:0;
+    padding-right:0;
+    
+    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+/*END OF THIS SNIPPET OF CODE FROM COURSE 62*/
 
 /* Grid */
 .row {
@@ -512,22 +536,20 @@ footer {
     padding-bottom: 20px;
     padding-top: 20px;
 }
-.banner-description:before,
-.banner-description:after,
-.banner-description:before,
-.banner-description:after,
-.banner-description:before,
-.banner-description:after {
+.fix {
+    clear: both;
+}
+
+.group:before,
+.group:after {
     content: "";
     display: table;
 }
-.banner-description:after,
-.row:after,
+
 .group:after {
     clear: both;
 }
-.banner-description,
-.row,
+
 .group {
     zoom:1;
 }
