@@ -56,15 +56,18 @@ p-5 both...
                     Learn More
                 </a>
 
-                <div class="collapse mt-3" id="bonus-content"> <!--collpase by default.-->
+                <div class="collapse mt-3" id="bonus-content">
+                    <!--collpase by default.-->
                     <!--margin top -3 means mt-3-->
 
                     <h3>Hidden Content!</h3>
                     <p>East Turkestan varies in meaning by context and usage. The term was coined in the 19th
-                        century by Russian Turkologists including NIkita Bichurin to replace another Western term, Chinese
+                        century by Russian Turkologists including NIkita Bichurin to replace another Western term,
+                        Chinese
                         Turkestan.</p>
                     <p>East Turkestan varies in meaning by context and usage. The term was coined in the 19th
-                        century by Russian Turkologists including NIkita Bichurin to replace another Western term, Chinese
+                        century by Russian Turkologists including NIkita Bichurin to replace another Western term,
+                        Chinese
                         Turkestan.</p>
                 </div>
 
@@ -84,11 +87,46 @@ p-5 both...
                     Russian Turkologists including NIkita Bichurin to replace another Western term, Chinese Turkestan.
                 </p>
 
-                <button class="btn btn-outline-success">Contact us.</button>
+                <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contact-us">Contact
+                    us.</button>
                 <!--
                     success typically means green.
                     outline means not having a solid background but a border.
+
+                    We want to have a element with id contact-us.
                 -->
+
+
+
+
+                <!--
+                    We need to change the id for contact-us.
+                -->
+                <!-- Button trigger modal -->
+             
+
+                <!-- Modal -->
+                <div class="modal fade" id="contact-us" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                COVID-19 comes from People's Republic of China.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <!-- The save changes button could be used. Just uncomment the line below.-->
+                                <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF Modal -->
             </div>
         </div>
     </div>

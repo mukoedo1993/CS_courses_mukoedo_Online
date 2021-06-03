@@ -6,6 +6,6 @@ When we first visit the website, we want a part of content below the blue button
 the content will appear.
 
 
-
+Carousel is good. It is a part of Bootstrap.
 ------------------------------------------------------------------------------------------------------------------------------
 COURSE 64TH
