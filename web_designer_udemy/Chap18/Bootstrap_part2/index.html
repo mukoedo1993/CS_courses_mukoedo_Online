@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Check https://getbootstrap.com/-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--It's going to respond with bootstrap CSS...!-->
+
+
+
+
+    <!--px-5 5 pxs of padding on x-axis
+    py-5...
+p-5 both...
+-->
+    <div class="bg-dark py-5 text-light shadow mb-5"> 
+        <!--https://getbootstrap.com/docs/4.0/utilities/colors/ for colors-->
+        <!--py-5 padding y-axis 5pixels.-->
+        <!--bg-dark VS bg-shadow. background's color...-->
+        <!--mb-NO.  margin-bottom with given value. NO. ranges from 1 to 5.-->
+
+        <div class="container">
+            <h1 class="display-2">Our amazing website.</h1><!-- display-2 here will give a different style.-->
+            <p class="lead">Thanks for visiting our super cool website about websites.</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <!--
+            Here, we want the first column to have one third of width, the second column to have
+            remaining two thirds of width.
+        -->
+        <div class="row">
+            <div class="col-md-8"><!--responsive design here for md screen..-->
+                <h1>Welcome To Our Page.</h1>
+                
+                
+                <!--The size of text is a little bit larger so-->
+                <p class="lead">East Turkestan varies in meaning by context and usage. The term was coined in the 19th century by Russian Turkologists including NIkita Bichurin to replace another Western term, Chinese Turkestan.</p>
+            </div>
+            <div class="col-md-4 small">
+                <!-- smaller text for small above-->
+                <!-- 4 parts in 12 for col-md-4 -->
+
+                <div class="alert alert-danger">
+                    <!--alert will give us baseline style for that box.-->
+                    <!--See more:
+                    https://getbootstrap.com/docs/4.0/components/alerts/-->
+                    We recently updated our entire site. Check it out!
+                </div>
+                <p>East Turkestan varies in meaning by context and usage. The term was coined in the 19th century by Russian Turkologists including NIkita Bichurin to replace another Western term, Chinese Turkestan.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
