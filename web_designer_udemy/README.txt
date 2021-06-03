@@ -1,5 +1,5 @@
 https://www.udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css/
-63rd/71 course 4:42
+63rd/71 course 10:07
 
 
 On ubuntu 20.04 
