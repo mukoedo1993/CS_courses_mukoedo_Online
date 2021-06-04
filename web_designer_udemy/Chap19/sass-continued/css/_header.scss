@@ -1,3 +1,5 @@
+@import 'mixins';//
+
 .site-header nav {
     ul{
         padding:0;
@@ -8,6 +10,23 @@
         list-style:none;//remove the bullets.
         float:left;//so that they stay at the same line
         margin-right: 10px;
+
+
+        /*
+        COURSE 67TH
+        media queries: two advantages:
+        1: It centralizes our media query conditions.
+        
+        */
+        @include bp-babyBear {
+            float:none;
+            margin-right: 0;
+            margin-bottom: 2px;
+        }
+
+        @include bp-papaBear {
+            margin-right:50px;
+        }
     }
     a {
         display: block;
@@ -17,3 +36,4 @@
         text-decoration: none;
     }
 }
+

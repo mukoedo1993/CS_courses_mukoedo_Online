@@ -23,6 +23,9 @@ npm run sass
 <br>
 Conclusion:<br>
 You can nest one rule inside another rule in SASS.
+<br>
+English learning:<br>
+Tuck away:1. To hide or store someone or something in a safe or secluded space. A noun or pronoun can be used between "tuck" and "away.<br>
 
 ## COURSE 65TH ##
 

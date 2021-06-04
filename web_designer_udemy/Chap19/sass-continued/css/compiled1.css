@@ -1,3 +1,18 @@
+html {
+  font-size: 1em;
+  line-height: 1.35;
+}
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  html {
+    font-size: 1.4em;
+  }
+}
+
 body {
   font-family: Helvetica, sans-serif;
   size: 0;
@@ -15,6 +30,24 @@ a {
   list-style: none;
   float: left;
   margin-right: 10px;
+  /*
+  COURSE 67TH
+  media queries: two advantages:
+  1: It centralizes our media query conditions.
+
+  */
+}
+@media only screen and (max-width: 700px) {
+  .site-header nav li {
+    float: none;
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .site-header nav li {
+    margin-right: 50px;
+  }
 }
 .site-header nav a {
   display: block;
@@ -41,14 +74,20 @@ a {
   /*
   Notice that stylesheet use dynamic color derives from baseline color(first parameter).
   */
-  background-color: red;
-  background-image: -webkit-graidient(linear, left top, left bottom, from(blue), to(red));
-  background-image: -webkit-linear-gradient(top, blue, red);
-  background-image: -moz-linear-gradient(top, blue, red);
-  background-image: -ms-linear-gradient(top, blue, red);
-  background-image: -o-linear-gradient(top, blue, red);
-  background-image: linear-gradient(to bottom, blue, red);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr="blue", EndColorStr="red");
+  background-color: #8dd7fd;
+  background-image: -webkit-graidient(linear, left top, left bottom, from(white), to(#8dd7fd));
+  background-image: -webkit-linear-gradient(top, white, #8dd7fd);
+  background-image: -moz-linear-gradient(top, white, #8dd7fd);
+  background-image: -ms-linear-gradient(top, white, #8dd7fd);
+  background-image: -o-linear-gradient(top, white, #8dd7fd);
+  background-image: linear-gradient(to bottom, white, #8dd7fd);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr="white", EndColorStr="#8dd7fd");
+}
+
+.box {
+  background-color: #DDD;
+  width: 300px;
+  height: 150px;
 }
 
 .group:before, .site-header nav ul:before,
