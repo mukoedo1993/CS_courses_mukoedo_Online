@@ -15,7 +15,7 @@ npx sass --watch learning-sass/main.scss output.css
 OR:
 ```
 #Notice that we need package.json here.
-#modify the 8th line of package.json in the form:
+#modify the 6th line of package.json in the form:
 # "sass": "sass --watch <scss file> <css file>",
 npm install
 npm run sass
