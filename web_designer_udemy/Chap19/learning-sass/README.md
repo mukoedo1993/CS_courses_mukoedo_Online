@@ -9,8 +9,8 @@ https://codepen.io/mukoedo1993/pen/KKWoXyz<br>
 2: The professional way<br>
 node.js installed many days ago on my Ubuntu.<br>
 ```
-#Starting at the Chap19 directory:
-npx sass --watch learning-sass/main.scss output.css
+#Starting at current directory:
+npx sass --watch main.scss output.css
 ```
 OR:
 ```

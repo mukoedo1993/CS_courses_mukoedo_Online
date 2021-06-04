@@ -1,0 +1,45 @@
+$primaryColor: #059dec; // If we know we are going to use a color more than once, define it as a variable.
+body {
+    font-family: Helvetica, sans-serif;
+    size: 0;
+}
+
+a {
+    color: $primaryColor; 
+}
+
+@import 'header';//import _header.scss
+
+.btn-a{
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 7px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+//extensibility in sass code:)
+.btn-b {
+    @extend .btn-a; //inherit from btn-a
+    background-color: lighten($primaryColor,45%);//second parameter is how much lighter we want it become.
+    /*
+    Notice that stylesheet use dynamic color derives from baseline color(first parameter).
+    */
+}
+
+.group:before,
+.group:after{
+    content: "";
+    display:table;
+}
+
+.group:after{
+    clear: both;
+}
+.group {
+    zoom:1;
+}
