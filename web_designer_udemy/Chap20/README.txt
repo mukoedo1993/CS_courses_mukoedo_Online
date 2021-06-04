@@ -6,4 +6,4 @@ https://mukoedo1993.github.io/
 
 That's all.
 ---------------------------
-COURSE 86TH
+COURSE 68TH
