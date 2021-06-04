@@ -1,0 +1,31 @@
+.site-header nav {
+	
+	ul {
+		padding: 0;
+		margin: 0;
+		@extend .group;
+	}
+
+	li {
+		list-style: none;
+		float: left;
+		margin-right: 10px;
+		@include bp-babyBear {
+			float: none;
+			margin-right: 0;
+			margin-bottom: 2px;
+		}
+		@include bp-papaBear {
+			margin-right: 50px;
+		}
+	}
+
+	a {
+		display: block;
+		padding: 10px 18px;
+		background-color: $beautifulHue;
+		color: #FFF;
+		text-decoration: none;
+	}
+
+}

@@ -1,0 +1,19 @@
+.site-header nav {
+    ul{
+        padding:0;
+        margin:0;
+        @extend .group; // clearfix 
+    }
+    li{
+        list-style:none;//remove the bullets.
+        float:left;//so that they stay at the same line
+        margin-right: 10px;
+    }
+    a {
+        display: block;
+        padding: 10px;
+        background-color: $primaryColor;
+        color:#FFF;
+        text-decoration: none;
+    }
+}

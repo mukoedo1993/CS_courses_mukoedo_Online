@@ -1,0 +1,78 @@
+$primaryColor: #059dec; // If we know we are going to use a color more than once, define it as a variable.
+body {
+    font-family: Helvetica, sans-serif;
+    size: 0;
+}
+
+a {
+    color: $primaryColor; 
+}
+
+@import 'header';//import _header.scss
+
+.btn-a{
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+    border: 1px solid $primaryColor;
+    border-radius: 7px;
+    font-size: 80%;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+// mixin
+// We use fromColor and toColor for all lines of code.
+@mixin verticalGradient($fromColor, $toColor)
+{
+    background-color: $toColor; //fallback color
+    background-image: -webkit-graidient(linear, left top, left bottom,
+    from($fromColor), to($toColor)); // Saf4+, Chrome
+
+    background-image:-webkit-linear-gradient(top, $fromColor, $toColor);
+    //Chrome 10+, Saf5.1+, iOS 5+
+
+    background-image: -moz-linear-gradient(top, $fromColor, $toColor); //FF3.6
+
+    background-image: -ms-linear-gradient(top, $fromColor, $toColor); //IE10
+
+    background-image: -o-linear-gradient(top, $fromColor, $toColor);//Opera 11.10+
+
+    background-image: linear-gradient(to bottom,$fromColor, $toColor);
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+
+}
+
+
+
+//extensibility in sass code:)
+.btn-b {
+    @extend .btn-a; //inherit from btn-a
+    background-color: lighten($primaryColor,45%);//second parameter is how much lighter we want it become.
+    /*
+    Notice that stylesheet use dynamic color derives from baseline color(first parameter).
+    */
+
+
+    // call a mixin
+    @include verticalGradient(blue,red );
+}
+
+.box{
+
+}
+
+.group:before,
+.group:after{
+    content: "";
+    display:table;
+}
+
+.group:after{
+    clear: both;
+}
+.group {
+    zoom:1;
+}
