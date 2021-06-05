@@ -1,2 +1,4 @@
 1: asio is an entirely header-based framework.
 
+2: Console outputs work well for important messages, but should be controled
+for trivial messages. Otherwise, your speed will be much lower.
