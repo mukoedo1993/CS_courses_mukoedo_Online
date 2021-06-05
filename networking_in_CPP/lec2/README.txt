@@ -32,3 +32,4 @@ So, no one will actually own the object...
 
 ----------------------------------------------------------------------------------------------
 18:32 2nd lec.
+https://www.youtube.com/watch?v=UbjxGvrDrbw
