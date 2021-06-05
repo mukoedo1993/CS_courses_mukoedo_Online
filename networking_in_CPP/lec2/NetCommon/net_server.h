@@ -2,6 +2,8 @@
 #define NET_SERVER_H
 
 #include <memory>
+#include <algorithm>
+#include <functional>
 #include "net_common.h"
 #include "net_tsqueue.h"
 #include "net_message.h"
@@ -70,7 +72,9 @@ namespace olc
                                 std::make_shared<connection<T>>(connection<T>::owner::server, 
                                 m_asioContext, std::move(socket), m_qMessagesIn); // It becomes shared among all connections, but thread-safe.
 
+                         // temporary comment out 70th, 72nd and 73rd 79, 80, 82, 84, 86, 87, 88 lines.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+              
                             // Give the user server a chance to deny connecton
                             if(OnClientConnect(newconn))
                             {
@@ -80,7 +84,8 @@ namespace olc
                                 m_deqConnections.back()->ConnectToClient(nIDCounter++);
 
                                 std::cout << "[" << m_deqConnections.back()->GetID() << "] Connection Approved\n";
-                            }else {
+                            }
+                            else {
                                 std::cout << "[----]Connection denied\n";
                             }    
                         }
@@ -118,7 +123,7 @@ namespace olc
                    OnClientDisconnect(client);
                    client.reset();
                    m_deqConnections.erase(
-                   std::remove(m_deqConnections.begin(), m_deqConnections.end(),client),m_deqConnections.end());
+                   std::remove(m_deqConnections.begin(), m_deqConnections.end(),client),m_deqConnections.end()); //erase_remove idiom
                }
            }
 
@@ -128,7 +133,30 @@ namespace olc
             // Send message to all clients
             void MessageAllClients(const message<T> &msg, std::shared_ptr<connection<T>> pIgnoreClient = nullptr)
             {
-                
+                bool bInvalidClentExits = false;
+                for(auto& client : m_deqConnections)
+                {
+                    // Check client is connected...
+                    if (client && client->IsConnected())
+                    {
+                        // ..It is!
+                        if (client != pIgnoreClient)
+                            client->send(msg);
+                    }
+                    else
+                    {
+                       // the client couldnt be contacted, so assume it has
+                       // discontinued
+                       OnClientDisconnect(client);
+                       client.reset();
+                       bInvalidDisconnect = true;
+                    }
+                }
+
+                if(bInvalidClentExits)
+                    m_deqConnections.erase(
+                        std::remove(m_deqConnections.begin(), m_deqConnections.end(), nullptr), m_deqConnections.end()
+                    );// We don't want to change the iterators when we are iterating via a range-for... Because it might invalidate those iterators.
             }
 
             /*
@@ -136,6 +164,24 @@ namespace olc
         in the user subclasses.
         */
 
+
+            //To let the user to decide when is the most proper time to handle messages.
+            void Update(size_t nMaxMessages = -1) // unsigned!
+            {
+                size_t nMessageCount = 0;
+                while(nMessageCount < nMaxMessages && !m_qMessagesIn.empty())
+                {
+                    // Grab the front message
+                    auto msg = m_qMessagesIn.pop_front();
+
+                    // Pass in message handler
+                    OnMessage(msg.remote(), msg.msg);
+
+                    nMessageCount++;
+                }
+            }
+
+            protected:
             //called when a client connects, you can veto the connection by returning false
             virtual bool OnClientConnect(std::shared_ptr<connection<T>> client)
             {
@@ -173,5 +219,9 @@ namespace olc
     }
 
 }
-
+// Until now,
+/*we have now implemented:
+it handles connections...
+handles storing incoming messages into the thread-safe deque,
+and give users ways to process these messages...*/
 #endif
