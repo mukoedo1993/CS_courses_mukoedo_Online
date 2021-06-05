@@ -1,5 +1,5 @@
 https://www.udemy.com/course/web-design-for-beginners-real-world-coding-in-html-css/
-70th/71 course 0:00
+all courses have been watched.
 
 
 On ubuntu 20.04 
@@ -13,5 +13,5 @@ https://complexspiral.com/publications/containing-floats/
 
 
 --------------------------------------------------------
-My github page (might be blocked in P.R. China)
+My github page 
 https://mukoedo1993.github.io/
