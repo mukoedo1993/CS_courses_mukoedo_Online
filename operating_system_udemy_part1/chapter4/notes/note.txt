@@ -1,0 +1,1 @@
+Burst time is the amount of time required by a process for executing on CPU. It is also called as execution time or running time.
