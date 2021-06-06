@@ -1,48 +1,30 @@
-/*
-
-void* calloc (size_t num, size_t size);
-Allocate and zero-initialize array
-Allocates a block of memory for an array of num elements, each of them size bytes long, and initializes all its bits to zero.
-
-The effective result is the allocation of a zero-initialized memory block of (num*size) bytes.
-
-If size is zero, the return value depends on the particular library implementation (it may or may not be a null pointer), but the returned pointer shall not be dereferenced.
+#include<stdio.h>
+#include<stdlib.h> //malloc
 
 
-*/
-
-
-/* calloc example */
-#include <stdio.h>      /* printf, scanf, NULL */
-#include <stdlib.h>     /* calloc, exit, free */
-
-int main ()
+int main(void)
 {
-  int i,n;
-  int * pData;
-  printf ("Amount of numbers to be entered: ");
-  scanf ("%d",&i);
-  pData = (int*) calloc (i,sizeof(int));
-  if (pData==NULL) exit (1);
-  for (n=0;n<i;n++)
-  {
-    printf ("Enter number #%d: ",n+1);
-    scanf ("%d",&pData[n]);
-  }
-  printf ("You have entered: ");
-  for (n=0;n<i;n++) printf ("%d ",pData[n]);
-  free (pData);
-  return 0;
+   int *p1 = malloc(4 * sizeof(int));   // allocates enough for an array of 4 int
+   int *p2 = malloc(sizeof(int[4]));    // same, naming the type directoly
+   int *p3 = malloc(4 *sizeof *p3);     // same, without repeating the type name
+
+   if (p1) {
+       for (int n=0; n<4; ++n) // populate the array
+        p1[n] = n * n;
+
+      for (int n=0; n<4; ++n) // print it back out
+       printf("p1[%d] == %d\n", n, p1[n]);
+   }
+
+   free(p1);
+   free(p2);
+   free(p3);
 }
 
 /*
- zcw@mukoedo1993:~/udemy_OS/udemy_operating_system/operating_system_udemy_part1/chapter3$ gcc -o rslt2 malloc.c
-(base) zcw@mukoedo1993:~/udemy_OS/udemy_operating_system/operating_system_udemy_part1/chapter3$ ./rslt2
-Amount of numbers to be entered: 5
-Enter number #1: -2
-Enter number #2: -5
-Enter number #3: 10
-Enter number #4: 23
-Enter number #5: -190
-You have entered: -2 -5 10 23 -190 (base)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/operating_system_udemy_part1/chapter3$ gcc -o rslt2 malloc.c && ./rslt2
+p1[0] == 0
+p1[1] == 1
+p1[2] == 4
+p1[3] == 9
 */
