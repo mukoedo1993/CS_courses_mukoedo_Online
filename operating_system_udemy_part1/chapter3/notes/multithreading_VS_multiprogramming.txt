@@ -1,0 +1,34 @@
+https://www.tutorialspoint.com/operating_system/os_types_qa3.htm
+multiprocessing VS multiprogramming
+(I):
+Multiprocessing refers to processing of multiple processes at same time
+by multiple CPUs.
+Multiprogramming keeps several programs in main memory at the same time and
+execute them concurrenctly utilizing single CPU.
+
+(II):
+Multiprocessing utilizes multiple CPUs.
+Multiprogramming utilizes single CPU.
+
+(III):
+Multiprocessing permits parallel processing.
+
+But for multiprogramming, context switching takes place.
+(Glossary: In computing, a context switch is the process of storing the state of a process
+or thread, so that it can be restored and resume execution at a later point.
+
+
+(IV):
+For Multiprocessing, less time taken to process the jobs.
+For, multiprogramming takes more time to process the jobs.
+
+(V):
+For Multiprocessing: it facilitates much efficient utilization of devices
+of the computer system.
+For multiprogramming, it is less efficient than multiprocessing.
+
+(VI):
+For multiprocessing, it is usu. more expensive.
+For multiprogramming, such systems are less expensive.
+
+
