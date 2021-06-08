@@ -67,5 +67,26 @@ Commit
 You can think of a commit as a secondary save...
 Commit = Git's way of "saving"
 
+Push&Pull
+So git stores all of its history data in a hidden folder in the root of your git
+repo.
+Git stores this data locally, on your hard drive.
+1: Lose your PC? Then everything sucks. :(
+2: Collaboration
+
+Solution: Repo Hosting
+git push/git pull
+
+e.g.
+#Push our commits into the branch of issue_tst1
+git push https://github.com/mukoedo1993/CS_courses_mukoedo_Online issue_tst1
+
+#pull our changes back.
+git pull origin issue_tst1
 
 2: See Git in action.
+
+
+Bonus:
+push into a new branch preparing for pull request
+git push https://github.com/mukoedo1993/CS_courses_mukoedo_Online issue_tst1
