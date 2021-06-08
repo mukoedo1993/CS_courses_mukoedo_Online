@@ -45,3 +45,27 @@ Feature Branches
 
 3: Where do we begin?
 Git in action <- next step...
+
+
+
+Git In Action:
+1: Grow our Git vocabulary.
+Project = Repository(repo)
+A repository is where it saves all of the data, all of the history,
+all of the changes that it tracks.
+
+Working directory
+
+Staging (Preparing, getting ready): <-- Control what gets commited
+(git add. is a synonym of it. I prefer git add.)
+Before we are allowed to commit changes, we first have to stage our changes.
+Resemblance:
+Real Estate:
+Sometimes before you can sell a home, you first have to stage the home.
+
+Commit
+You can think of a commit as a secondary save...
+Commit = Git's way of "saving"
+
+
+2: See Git in action.
