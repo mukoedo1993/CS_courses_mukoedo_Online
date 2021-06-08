@@ -69,3 +69,7 @@ Commit = Git's way of "saving"
 
 
 2: See Git in action.
+See git-test2.md.
+Clone
+Copy an existing repository from a server to our computer's hard drive.
+
