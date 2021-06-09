@@ -98,3 +98,5 @@ Leave the package exactly what they are in the module folder. Learn how to impor
 
 3. Why are the new package files not tracked by Git?<br>
 See: https://github.com/mukoedo1993/travel-site-sec7/blob/main/.gitignore
+It is the best practice. As long as we have the package.json file, there is no sense in bloating git repo for these files...
+We will not add .gitignore file in the current directory.
