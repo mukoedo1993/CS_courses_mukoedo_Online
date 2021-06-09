@@ -96,4 +96,5 @@ Common Questions<br>
 2. How do we actually use the package JS & CSS files?<br>
 Leave the package exactly what they are in the module folder. Learn how to import files in the future.<br>
 
-3. Why are the new package files not tracked by Git?
+3. Why are the new package files not tracked by Git?<br>
+See: https://github.com/mukoedo1993/travel-site-sec7/blob/main/.gitignore
