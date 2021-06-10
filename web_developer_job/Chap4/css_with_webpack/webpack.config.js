@@ -1,6 +1,27 @@
 const path = require('path') // import path (which is a part of nodejs lib.)
 
+//LECTURE 15!!!!!!!!!!!!!!!!!!!!!
+const postCSSPlugins = [
+    require('postcss-simple-vars'),
+    require('postcss-nested'),
+    require('autoprefixer')
+]
+//end of LECTURE 15!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 module.exports = {  // When webpack loads this file, it knows the JS object we just created is what should be exported and used.
+
+    //START OF LECTURE 15 NEW PART:
+    module: {
+        // https://webpack.js.org/loaders/css-loader/
+        rules: [
+          {
+            test: /\.css$/i,
+            use: ["style-loader", "css-loader", {loader: 'postcss-loader', options: {postcssOptions: {plugins: postCSSPlugins}}}],
+          },
+        ],
+      },
+    //END OF LECTURE 15.
+
 
     entry: './app/assets/scripts/App.js', // It points to the poath of the JS file we want webpack to watch, process and bundle.
 
@@ -16,17 +37,6 @@ module.exports = {  // When webpack loads this file, it knows the JS object we j
 
 
     mode: 'development',
-    watch: true, // webpack will keep actively watching us, we do not need to run any other code again on terminal...
-
-
-    // COURSE 15TH !!!!!!!!!!!!!!!!!!!!!!
-    modules: {
-        rules: [
-         {
-             test: /\.css$/i,    // only interested i files end in dot css.
-             use: ['css-loader']        // leverage packages we download from npm
-         } // tell webpack what to do if it run into a CSS file.
-        ]
-    }
+    watch: true // webpack will keep actively watching us, we do not need to run any other code again on terminal...
 
 }// It should be exported for use.
