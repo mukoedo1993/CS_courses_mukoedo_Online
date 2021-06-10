@@ -101,3 +101,7 @@ See: https://github.com/mukoedo1993/travel-site-sec7/blob/main/.gitignore
 It is the best practice. As long as we have the package.json file, there is no sense in bloating git repo for these files...
 We will not add .gitignore file in the current directory.<br>
 I add package-lock.json and package.json in the .gitignore file. <br>
+
+
+4. See Sec12.txt<br>
+I made some changes on both package.json and package-lock.json files.
