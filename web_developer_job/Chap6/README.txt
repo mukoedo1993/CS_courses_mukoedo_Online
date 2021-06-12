@@ -28,7 +28,9 @@ The bundle server made our address available on our address:
 
 Access the web page  at the url 
 192.168.<>.<>:3000
- on other devices with access to the same internet.
+ on other devices with access to the same internet. 192.168.<>.<> is our local ip address here.
+ How to find our local IP address on ubuntu?
+ https://ubuntuhandbook.org/index.php/2020/07/find-ip-address-ubuntu-20-04/
 
 localhost:3000/bundled.js 
 could show us the bundled js file which is injected in the server rather than our
