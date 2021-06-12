@@ -1,4 +1,4 @@
-Start from 21st course
+INDEPENDENT PART
 -------------------------------------------------------
 
 In this lesson, we will learn about responsive images.
@@ -31,4 +31,4 @@ cropping reasons, you use the picture element.
 
 
 ----------------------------------------------------
-22nd 12:27 and 23rd COURSE
+22nd COURSE PART 1
