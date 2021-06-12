@@ -1,0 +1,45 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+
+    <h1>Dog Page</h1>
+    <!--LEC 22ND
+      picture element shows that how to have query of images when you have fine-grained control
+      of how your images will be cropped at different screen sizes.
+    -->
+
+    <!--
+    <picture>
+       Art direction & cropping situation
+      <source srcset="assets/images/dog-crop-large.jpg" media="(min-width: 1200px)">
+      <source srcset="assets/images/dog-crop-medium.jpg" media="(min-width: 760px)">
+      <img src="assets/images/dog-crop-small.jpg" alt="Puppy in the sand.">
+    </picture>
+  -->
+
+      <img srcset="assets/images/dog-resolution-small.jpg 570w, assets/images/dog-resolution-medium.jpg 1200w, assets/images/dog-resolution-large.jpg 1920w
+       "
+      alt = "Puppy in the sand.">
+      <!--For our software, they know the size of their own screen, and they also know pixel density in this screen.-->
+
+    <p>
+      Provoquées par le règlement insatisfaisant de la Première Guerre mondiale et par les ambitions expansionnistes
+       et hégémoniques des trois principales nations de l’Axe (le Troisième Reich, l'Italie fasciste et l'Empire du Japon),
+        elle est favorisée par la convergence d’un ensemble de tensions et conflits régionaux, notamment 
+        : en Afrique (Seconde guerre italo-éthiopienne dès 1935), en Espagne où la guerre civile commence
+         le 18 juillet 1936, en Chine où la guerre contre le Japon débute le 7 juillet 1937, et en Europe centrale où
+          l'Allemagne annexe autoritairement l'Autriche le 11 mars 1938 puis les territoires des Sudètes pris
+           à la Tchécoslovaquie le 21 octobre 1938 et où enfin, le 1er septembre 1939, elle agresse militairement
+            la Pologne grâce à un accord passé avec l'URSS. Ce dernier événement provoque dès le 3 septembre 1939,
+       l'entrée en guerre du Royaume-Uni (à 11 h), de la France (à 17 h), et de leurs empires coloniaux respectifs.
+    </p>
+  </body>
+
+  <script src="bundled.js"> 
+  
+
+  </script>
+<!--very necessary, to call the js file injected in the web server.-->
+</html>
