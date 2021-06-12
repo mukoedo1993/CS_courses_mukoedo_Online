@@ -1,2 +1,16 @@
 DPI: Dots per inch
-Dots per inch is a measure of spatial printing, video or image scanner dot density, in particular the number of individual dots that can be placed in a line within the span of 1 inch.
+Dots per inch is a measure of spatial printing, video or image scanner dot density,
+ in particular the number of individual dots that can be placed in a line within
+  the span of 1 inch.
+
+
+
+
+---------------------------------------
+device pixel ratio (DPR) 
+
+
+---------------------------------------
+fine-tune:
+
+make small adjustments to (something) in order to achieve the best or a desired performance.
