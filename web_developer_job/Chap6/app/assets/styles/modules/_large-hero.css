@@ -1,0 +1,46 @@
+.large-hero {
+  
+    position: relative;
+    &__text-content { /*equals to .large-hero__text-content 18TH COURSE
+        It doesn't work like traditional SASS which use descendant class selector but still shows the hierarchy clearly.
+        */
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);/*push down the length of the element.*/
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*lec 18*/
+    &__title {
+    font-weight: 300; 
+    color: $mainblue;
+    font-size: 4.8rem;
+    margin: 0;
+}
+
+    &__subtitle {
+    font-weight: 300; 
+    color: $mainblue;
+    font-size: 2.9rem;
+    margin: 0;
+}
+
+    &__description {
+        color: #FFF;
+        font-size: (30 / 16) rem;
+        font-weight: 100;
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+        max-width: 260px;
+        margin-left: auto;
+       margin-right: auto;
+
+    }
+
+
+
+}
+
+
+
