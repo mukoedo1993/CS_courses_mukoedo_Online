@@ -1,0 +1,26 @@
+.headline{
+    font-weight: 300;
+    font-size: 2.875rem; 
+    color: $mainblue;
+
+    &--centered {
+        text-align: center;
+    }
+
+
+    &--orange {
+        color: $mainOrange;
+    }
+
+    /*lecture 24 and 25*/
+    &--small {
+        font-size: 1.875rem;
+    }
+
+      /*lecture 24 and 25*/
+    &--narrow {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

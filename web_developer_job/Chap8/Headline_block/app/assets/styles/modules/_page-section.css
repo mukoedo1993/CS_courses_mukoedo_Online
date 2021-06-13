@@ -1,0 +1,11 @@
+/*top padding and bottom padding for each section at the page*/
+/*LECTURE 24TH*/
+
+.page-section {
+    padding: 4.5rem 0;
+
+    &--blue{
+        background-color: $mainblue;
+        color: #FFF;
+    }
+}
