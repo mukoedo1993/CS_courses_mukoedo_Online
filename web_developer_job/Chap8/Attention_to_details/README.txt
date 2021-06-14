@@ -23,7 +23,15 @@ BEM wants to rescue us from... (but not mandatory needed... just strongly recomm
 
 If our website is powered by word doc, or if down the road our website is powered by a 
 content management system or a blog<- it's BEM
-But if for a not that generic paragraph, we could go to our customized shortcuts....
+
+
+But if for a much more generic paragraph, we could go to our customized shortcuts....
+as soon as we keep our contents scoped in our class...
+And we only want to apply this class to the element if we are ok with the descendants being
+styled in a specific way.
+
+
+
 -----------------------------------------------------------------
 Sidenote 1:
 It's ok to overwrite your column grid when necessary.
