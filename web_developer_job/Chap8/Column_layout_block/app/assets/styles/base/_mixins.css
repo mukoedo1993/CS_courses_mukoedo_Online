@@ -1,0 +1,37 @@
+@define-mixin atSmall {
+    @media (min-width: 530px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atMedium {
+    @media (min-width: 800px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atLarge {
+    @media (min-width: 1200px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin atSmaller {
+    @media (max-width 529px) {
+        @mixin-conetnt;
+    }
+}
+
+@define-mixin clearfix {
+    &::after{
+        /*pseudo or fake content with CSS*/
+        /*LEC 26
+        This CSS selector will add this blank space after all of the content in the main
+        row div.
+        */
+        content:"";
+        clear:both;
+        display:table;
+    }
+
+}
