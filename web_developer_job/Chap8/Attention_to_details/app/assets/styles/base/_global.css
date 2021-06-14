@@ -8,9 +8,6 @@ img {
     max-width: 100%;
     height: auto;
 
-    @media (min-width: 800px) {
-        max-width: 976px;
-    }
 }
 
 
@@ -23,4 +20,10 @@ img {
     after considering padding-right.
     Set border-box globally could make our life much better.
     */
+}
+
+
+
+a {
+    color: $mainOrange;
 }

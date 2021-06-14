@@ -1,10 +1,12 @@
 @import "normalize.css"; /*It make all web browsers render things more consistently normalized is excellent.*/
 /*https://github.com/necolas/normalize.css/*/
-@import "base/_global";
+
 
 @import 'base/_variables.css'; /*LECTURE 19TH*/
 
 @import "base/_mixins";
+
+@import "base/_global";
 
 @import "modules/_large-hero"; 
 
@@ -24,3 +26,4 @@ here, our code is pretty organized.
 @import "modules/_headline"; /*course 25*/
 
 @import "modules/_row"; /*course 26*/
+@import "modules/_generic-content-container"; /*course 28*/

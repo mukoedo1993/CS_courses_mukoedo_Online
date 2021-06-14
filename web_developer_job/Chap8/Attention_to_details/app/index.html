@@ -13,7 +13,7 @@
 <body>
   <header>
 
-    <img src="assets/images/icons/clear-view-escapes.svg">
+    <img src="assets/images/icons/clear-view-escapes.svg 100vp" class="wrapper--full-screen">
     <a href="#" class="btn">Get in Touch</a>
     <nav>
       <ul>
@@ -83,47 +83,53 @@
       </div>
 
       <div class="row row--gutters">
-        <div class="row__medium-4 row__medium-4--larger"> <!--four eight split-->
-         <picture>
-           <!--
+        <div class="row__medium-4 row__medium-4--larger row__b-margin-until-medium">
+          <!--four eight split-->
+          <picture>
+            <!--
              In the case of large screen and medium screen, it's NOT OK for us to assume that the browser
           will take the full screen of the browser. It just takes a part of the screen.
           But in the last case, it's okay for us to assume that the browser will take the full screen, for the small screen.
            -->
-          <source sizes="404px" srcset="assets/images/our-start-i.jpg 404w,
-           assets/images/our-start-high-dpi-i.jpg 808w" media="(min-width: 1200px)"> 
-           <source sizes="380px" srcset="assets/images/our-start-portrait-i.jpg 382w,
-           assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)"> 
+            <source sizes="404px" srcset="assets/images/our-start-i.jpg 404w,
+           assets/images/our-start-high-dpi-i.jpg 808w" media="(min-width: 1200px)">
+            <source sizes="380px" srcset="assets/images/our-start-portrait-i.jpg 382w,
+           assets/images/our-start-portrait-hi-dpi-i.jpg 764w" media="(min-width: 800px)">
             <img srcset="assets/images/our-start-landscape-i.jpg 800w,
             assets/images/our-start-landscape-hi-dpi.jpg 1600w" alt="Our founder, Jane Doe">
-         </picture>
+          </picture>
 
 
         </div>
-        <div class="row__medium-8 row__medium-8--smaller">
-          <h2 class="headline">Here&rsquo;s how we got started&hellip;</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut
-            aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim
-            id est laborum.</p>
-          <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat
-            nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est
-            laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-            labore
-            et
-            dolore magna aliqua.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum
-            velit esse cillum <strong>dolore eu fugiat.</strong></p>
-        </div>
+       
+          <div class="row__medium-8 row__medium-8--smaller">
+            <div class="generic-content-container">
+            <h2 class="headline headline--no-t-margin">Here&rsquo;s how we got started&hellip;</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut
+              aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim
+              id est laborum.</p>
+            <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat
+              nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+              id
+              est
+              laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore
+              et
+              dolore magna aliqua.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum
+              velit esse cillum <strong>dolore eu fugiat.</strong></p>
+            </div>
+          </div>
+
 
         <!--sloppy way to clearfix-->
         <!--
