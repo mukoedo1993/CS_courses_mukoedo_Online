@@ -7,4 +7,21 @@ this wrapper is a design pattern that keeps your texts away from two horizontal 
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
+
+    &--medium {
+     /*
+     max-width: 976px;
+     */
+     /*
+     Brat used the method above.
+     */
+     display: flex;
+     justify-content: center;
+    }
+
+    .wrapper{ /*A wrapper inside another wrapper lec25th*/
+        padding-left: 0;
+        padding-right: 0;
+    }
 }

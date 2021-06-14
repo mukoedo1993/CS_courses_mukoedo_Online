@@ -1,7 +1,16 @@
 .headline{
     font-weight: 300;
-    font-size: 2.875rem; 
+   
     color: $mainblue;
+
+    @mixin atSmall{
+      
+        font-size: 2.875rem; 
+    }
+    @mixin atSmaller{
+      
+        font-size: 1.9rem; 
+    }
 
     &--centered {
         text-align: center;
@@ -13,8 +22,18 @@
     }
 
     /*lecture 24 and 25*/
+
+    /*
+    So we could treat smaller and small sizes screens with diff. font-size.
+    */
     &--small {
+       @mixin atSmall{
         font-size: 1.875rem;
+       }
+      
+        @mixin atSmaller{
+            font-size: 1.2rem;
+        }
     }
 
       /*lecture 24 and 25*/
@@ -22,5 +41,18 @@
         max-width: 500px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+
+    &--light {
+        font-weight: 100;
+    }
+
+    &--b-margin-small {
+        margin-bottom: .5em; /*It relative to the font size of element itslef. LECTURE 25*/
+    }
+
+    &--b-margin-large {
+        margin-bottom: 1.6em;
     }
 }

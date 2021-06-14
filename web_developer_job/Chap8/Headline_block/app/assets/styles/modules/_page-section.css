@@ -2,7 +2,16 @@
 /*LECTURE 24TH*/
 
 .page-section {
-    padding: 4.5rem 0;
+    @mixin atSmaller{
+    padding: 1.2rem 0;
+    }
+    @mixin atSmall{
+        padding: 1.2rem 0;
+        }
+    @mixin atMedium{
+        padding: 4.5rem 0;
+    }
+   
 
     &--blue{
         background-color: $mainblue;
