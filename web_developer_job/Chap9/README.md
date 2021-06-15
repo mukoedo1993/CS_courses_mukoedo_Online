@@ -29,7 +29,7 @@ git commit -m'count to ten! Complete!'
 
 git checkout main
 git merge count-to-ten # merge feature from count-to-ten into main
-
+#See script.txt for more terminal code.
 ```
 
-LEC 29TH
+# LEC 29TH #
