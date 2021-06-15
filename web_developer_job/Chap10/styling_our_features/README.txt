@@ -13,7 +13,8 @@ git merge main --no-ff #no fast-forwarding merging # we could see a dedicated co
 git push origin our-features
 
 
-
+team decision:
+no fast-forward or ...
 
 
 ---------------------------------
