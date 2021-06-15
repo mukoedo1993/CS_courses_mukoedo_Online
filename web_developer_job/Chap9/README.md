@@ -16,6 +16,8 @@ git reset <file path> # unstage a file
 
 #Checkout(switch to) count-to-ten branch
 git checkout count-to-ten
+# add an ordered list in the index.html
+
 
 
 
