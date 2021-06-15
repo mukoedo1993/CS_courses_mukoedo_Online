@@ -22,7 +22,9 @@ git checkout count-to-ten
 git add .
 git commit -m'message'
 git checkout main # checkout the main branch
-
+git add .
+git commit -m'count to ten! Complete!'
+git
 
 git add .
 git commit -m'count-to-seven'
