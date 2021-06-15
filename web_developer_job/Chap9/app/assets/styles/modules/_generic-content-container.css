@@ -1,0 +1,17 @@
+.generic-content-container {
+
+    p {
+        line-height: 1.65;/*increase the font-weight*/
+       
+        margin: 1.8rem 0;
+
+        @mixin atSmall {
+            font-size: 1.125rem;/*increase font-size and margin between paragraphs.*/
+        }
+    }
+
+
+    p a{
+        font-weight: 700; /*400 is normal*/
+    }
+}

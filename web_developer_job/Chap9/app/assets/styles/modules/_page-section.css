@@ -1,0 +1,18 @@
+/*top padding and bottom padding for each section at the page*/
+/*LECTURE 24TH*/
+
+.page-section {
+
+    @mixin atSmall{
+        padding: 1.2rem 0;
+        }
+    @mixin atMedium{
+        padding: 4.5rem 0;
+    }
+   
+
+    &--blue{
+        background-color: $mainblue;
+        color: #FFF;
+    }
+}
