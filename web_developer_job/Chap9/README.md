@@ -5,7 +5,11 @@ Switch terminal is easily within vscode(ubuntu).<br>
 Create a new branch for each new feature of our project. <br>
 2. How to create a new branch.<br>
 3. How to switch between branches.<br>
-4. Merge one branch into another.<br>
+4. Merge one branch into another: using github's GUI or using terminal command on ubuntu.<br>
+
+To be continued <br>
+1. "--no-ff" merge option... 
+2. How to handle merge conflicts...
 -----------------------------------------------------------------
 ```
 git branch # list all of branches
@@ -25,7 +29,7 @@ git commit -m'count to ten! Complete!'
 
 git checkout main
 git merge count-to-ten # merge feature from count-to-ten into main
-
+#See script.txt for more terminal code.
 ```
 
-LEC 29TH
+# LEC 29TH #
