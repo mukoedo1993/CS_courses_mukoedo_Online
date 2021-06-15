@@ -12,7 +12,10 @@ git branch # list all of branches
 
 git reset <file path> # unstage a file
 
-#
+#Create a new branch count-to-ten
+
+#Checkout(switch to) count-to-ten branch
+git checkout count-to-ten
 
 
 
