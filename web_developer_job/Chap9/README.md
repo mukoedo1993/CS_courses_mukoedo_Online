@@ -17,8 +17,15 @@ git reset <file path> # unstage a file
 #Checkout(switch to) count-to-ten branch
 git checkout count-to-ten
 
+# add index.html file
+# modify index.html to add an ordered list.
+git add .
+git commit -m'message'
+git checkout main # checkout the main branch
 
 
+git add .
+git commit -m'count-to-seven'
 
 ```
 
