@@ -1,10 +1,9 @@
-
 start from 22nd course part2:
 -----------------------------------------------------------------
 design pattern:
-Two edges of content touch the screen.
+make Two edges of content  do not touch the screen.
 
-padding at the head
+padding at the head & bottom
 
 img{
     ...

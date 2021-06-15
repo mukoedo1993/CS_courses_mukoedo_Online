@@ -10,6 +10,10 @@ Create a new branch for each new feature of our project. <br>
 ```
 git branch # list all of branches
 
+git reset <file path> # unstage a file
+
+#
+
 
 
 
