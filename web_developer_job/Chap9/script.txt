@@ -426,7 +426,7 @@ Fast-forward
   count-to-ten
   issue_tst1
 * main
-(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch -d count-to-fifteen count-to-ten
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch -d count-to-fifteen count-to-ten # delete both two branches locally.
 Deleted branch count-to-fifteen (was b246d0d).
 Deleted branch count-to-ten (was a327fb5).
 (base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add . && git commit -am'remove test numbers.' && git push origin main
