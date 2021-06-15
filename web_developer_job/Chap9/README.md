@@ -13,14 +13,12 @@ git branch # list all of branches
 git reset <file path> # unstage a file
 
 #Create a new branch count-to-ten
-<<<<<<< HEAD
-=======
 
 #Checkout(switch to) count-to-ten branch
 git checkout count-to-ten
 # add an ordered list in the index.html
 
->>>>>>> count-to-ten
+
 git add .
 git commit -m'message'
 git commit -m'count to ten! Complete!'
