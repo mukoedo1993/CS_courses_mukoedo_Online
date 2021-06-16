@@ -79,6 +79,42 @@
 
    }
 
+   @mixin atLarge {
+    &__b-margin-until-large {
+        margin-bottom: 0;
+    }
+
+ 
+    &__large-4{
+        float: left;
+        width: 33.333%;
+    }
+
+
+    &__large-4--larger {
+        width: 37%;
+    }
+
+    /*lecture 30*/
+    &__large-6 {
+        float:left;
+        width:50%;
+    }
+
+    &__large-8{
+        float:left;
+        width:66.66%;
+    }
+
+    &__large-8--smaller {
+        width: 63%;
+    }
+
+   }
+
+
+
+
 
    &__b-margin-until-medium {
      
@@ -102,6 +138,21 @@
         display: flex;
     }
 }
+
+
+/*Begin equal height rules COURSE 34*/
+&--equal-height-at-large {
+    @mixin atLarge{
+    display:flex;
+    }
+
+    & > div{
+        /*Two lines of code below force it to become a flex box.*/
+        float:none;
+        display: flex;
+    }
+}
+
 
   
 }

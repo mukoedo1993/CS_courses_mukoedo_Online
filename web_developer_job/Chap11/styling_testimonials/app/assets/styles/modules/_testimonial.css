@@ -7,7 +7,7 @@
  
 
 
-    @mixin atMedium {
+    @mixin atLarge {
        margin-bottom:0;
         padding: 0 1.8125rem 1px 1.8125rem;
 
@@ -16,7 +16,7 @@
     &--last {
       margin-bottom: -1rem;
 
-      @mixin atMedium {
+      @mixin atLarge {
           margin-bottom: 0;
       }
       
