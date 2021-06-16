@@ -13,7 +13,7 @@ And adjust three testimonials so that each one has equal height...
 using flex box...
 PART 3:
 In the medium screen, there will not be enough space for three-column layout.
-So,
+So, we set the large screen as a watershed line for testimonials' responsive design.
 
 
 ---------------------------------
