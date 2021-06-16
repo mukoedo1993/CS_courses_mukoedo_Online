@@ -17,4 +17,4 @@ So, we set the large screen as a watershed line for testimonials' responsive des
 
 
 ---------------------------------
-COURSE 32ND && 33TH && 34TH
+COURSE 32ND && 33RD && 34TH
