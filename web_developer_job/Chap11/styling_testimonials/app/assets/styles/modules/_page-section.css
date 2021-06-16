@@ -9,6 +9,17 @@
     @mixin atMedium{
         padding: 4.5rem 0;
     }
+    
+    &--no-b-padding-until-medium {
+        padding-bottom:0;
+      
+      
+       
+        @mixin atMedium {
+            padding-bottom:4.5rem;
+          
+        }
+    }
    
 
     &--blue{
@@ -16,10 +27,17 @@
         color: #FFF;
     }
 
+    /*LEC 34TH*/
     &--testimonials{
+        background-color: #e0e6ef;
+     
+        @mixin atMedium{
         background: url("../../assets/images/testimonials-bg.jpg") top center no-repeat; 
         /*https://stackoverflow.com/questions/35369419/how-to-use-images-in-css-with-webpack LECTURE 32*/
 
         background-size: cover;
+   
+       
+        }
     }
 }

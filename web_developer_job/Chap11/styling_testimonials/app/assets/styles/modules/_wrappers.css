@@ -14,16 +14,29 @@ this wrapper is a design pattern that keeps your texts away from two horizontal 
     &--medium {
      
     max-width: 976px;
-     
-     
-    }
+   
+   }
+
+   &--no-padding-until-medium
+   {
+       padding-left: 0;
+       padding-right: 0;
+       
+       @mixin atMedium{
+                padding-left: 18px;
+                padding-right: 18px;
+       }
+
+   }
+
+
 
     .wrapper{ /*A wrapper inside another wrapper lec25th*/
         padding-left: 0;
         padding-right: 0;
     }
-
-
+     
+  
    
           
     }

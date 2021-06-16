@@ -7,6 +7,9 @@
    @mixin clearfix;
 
 
+   &--t-padding {
+       padding-top: 80px;
+   }
    &--gutters {
        margin-right: -65px; /*LEC 26TH*/
    }
@@ -25,6 +28,14 @@
 
    &--gutters-large {
        margin-right: -100px;
+   }
+
+   &--gutters-small {
+       margin-right: -45px;
+   }
+
+   &--gutters-small > div {
+       padding-right: 45px;
    }
 
 
@@ -79,6 +90,18 @@
     }
 }
  
+/*Begin equal height rules COURSE 34*/
+&--equal-height-at-medium {
+    @mixin atMedium{
+    display:flex;
+    }
+
+    & > div{
+        /*Two lines of code below force it to become a flex box.*/
+        float:none;
+        display: flex;
+    }
+}
 
   
 }
