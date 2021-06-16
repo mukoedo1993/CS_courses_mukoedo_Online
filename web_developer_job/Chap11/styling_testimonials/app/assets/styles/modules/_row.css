@@ -1,0 +1,88 @@
+.row{
+    /* LEC 26!
+    the containing row element treats its two child element as blank.
+    For example, if we set color as yellow here, nothing's color will change in the web page.
+    */
+ 
+   @mixin clearfix;
+
+
+   &--gutters {
+       margin-right: -65px; /*LEC 26TH*/
+   }
+
+
+   &--gutters > div{
+       padding-right: 65px;
+       /*
+       We don't actually want to style actual row div. We want to select all of its
+       childern, in other words, all of the columns.
+       ALL DIRECT CHILDERN WITH THE TAG OF DIV CHOSEN.
+       */
+
+      
+   }
+
+   &--gutters-large {
+       margin-right: -100px;
+   }
+
+
+   &--gutters-large > div{
+    padding-right: 100px;
+}
+
+    margin-bottom: 1rem;
+
+
+   @mixin atMedium {
+    &__b-margin-until-medium {
+        margin-bottom: 0;
+    }
+
+ 
+    &__medium-4{
+        float: left;
+        width: 33.333%;
+    }
+
+
+    &__medium-4--larger {
+        width: 37%;
+    }
+
+    /*lecture 30*/
+    &__medium-6 {
+        float:left;
+        width:50%;
+    }
+
+    &__medium-8{
+        float:left;
+        width:66.66%;
+    }
+
+    &__medium-8--smaller {
+        width: 63%;
+    }
+
+   }
+
+
+   &__b-margin-until-medium {
+     
+    margin-bottom:1rem;
+}
+@mixin atMedium{
+&__b-margin-until-medium{
+        margin-bottom: 0; /*baseline value*/
+    }
+}
+ 
+
+  
+}
+
+.clear-me {
+    clear: both;
+}
