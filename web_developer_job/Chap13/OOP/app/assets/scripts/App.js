@@ -88,6 +88,6 @@ class Adult extends Person114_1 {
        }
 }
 
-let jane114_3 = new Adult("Jane Smith114_3", "bloodgreen")
+let jane114_3 = new Adult("Jane Smith114_3", "viridian")
 jane114_3.greet()
 jane114_3.payTaxes()

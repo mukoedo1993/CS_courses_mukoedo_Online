@@ -18,3 +18,6 @@ A function contained by an object is no longer a function, but a method.
 --------------------------------------------------------------------------------------------
 43rd course:
 separate js code into separate files.
+class (syntactic sugar)
+inheritance (use extends)
+see three *.js files for more notes.
