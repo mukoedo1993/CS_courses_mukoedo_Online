@@ -1,0 +1,471 @@
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch # list all of branches
+  issue_tst1
+* main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../Chap8/creating_reusable_blocks/README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'lec_29 part 1'
+[main c1c309d] lec_29 part 1
+ 80 files changed, 10280 insertions(+)
+ create mode 100644 web_developer_job/Chap9/English_learning_.txt
+ create mode 100644 web_developer_job/Chap9/README.md
+ create mode 100644 web_developer_job/Chap9/app/assets/images/first-trip-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/first-trip-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/first-trip-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/first-trip-low-res-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/first-trip-low-res.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/first-trip.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--large-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--large-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--large-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--large.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--medium-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--medium-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--medium-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--medium.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--small-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--small-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--small-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--small.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--smaller-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--smaller-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--smaller-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/hero--smaller.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/clear-view-escapes.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/comment.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/facebook.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/fire.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/globe.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/instagram.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/mail.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/rain.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/star.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/twitter.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/wifi.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/icons/youtube.svg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-landscape-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-landscape-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-landscape-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-landscape-small-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-landscape-small.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-landscape.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-portrait-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-portrait-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-portrait-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start-portrait.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/our-start.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-cat-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-cat-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-cat-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-cat.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-jane-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-jane-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-jane-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-jane.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-john-hi-dpi-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-john-hi-dpi.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-john-i.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonial-john.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/images/testimonials-bg.jpg
+ create mode 100644 web_developer_job/Chap9/app/assets/scripts/App.js
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/base/_global.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/base/_mixins.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/base/_variables.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_btn.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_generic-content-container.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_headline.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_large-hero.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_page-section.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_row.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/modules/_wrappers.css
+ create mode 100644 web_developer_job/Chap9/app/assets/styles/styles.css
+ create mode 100644 web_developer_job/Chap9/app/index.html
+ create mode 100644 web_developer_job/Chap9/package-lock.json
+ create mode 100644 web_developer_job/Chap9/package.json
+ create mode 100644 web_developer_job/Chap9/script.txt
+ create mode 100644 web_developer_job/Chap9/webpack.config.js
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 825 bytes | 825.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   986a56b..c1c309d  main -> main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git reset tst1.txt
+Unstaged changes after reset:
+M       web_developer_job/Chap8/creating_reusable_blocks/README.txt
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../Chap8/creating_reusable_blocks/README.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        tst1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -a
+[main 175c503]  modified:   ../Chap8/creating_reusable_blocks/README.txt
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+ create mode 100644 web_developer_job/Chap9/tst1.txt
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 779 bytes | 779.00 KiB/s, done.
+Total 9 (delta 7), reused 0 (delta 0)
+remote: Resolving deltas: 100% (7/7), completed with 7 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   c1c309d..175c503  main -> main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch count-to-ten
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch
+  count-to-ten
+  issue_tst1
+* main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout count-to-ten
+M       web_developer_job/Chap9/README.md
+M       web_developer_job/Chap9/app/index.html
+Switched to branch 'count-to-ten'
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+M       web_developer_job/Chap9/README.md
+M       web_developer_job/Chap9/app/index.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   app/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        modified:   app/index.html
+
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git reset
+Unstaged changes after reset:
+M       web_developer_job/Chap9/README.md
+M       web_developer_job/Chap9/app/index.html
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   app/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        modified:   app/index.html
+
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -a
+[main 38da1a2]  with '#' will be ignored, and an empty message aborts the commit.
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout count-to-ten
+Switched to branch 'count-to-ten'
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout count-to-ten
+Switched to branch 'count-to-ten'
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git status
+On branch count-to-ten
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   app/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add app/index.html README.md
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        web_developer_job/Chap9/app/index.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'count-to-ten add ordered list'
+[count-to-ten d00ce06] count-to-ten add ordered list
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'count to seven'
+[main 0db6dd0] count to seven
+ 2 files changed, 17 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -'count to ten! complete!'
+fatal: could not lookup commit ount to ten! complete!
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'count to ten! complete!'
+[main 329b4f5] count to ten! complete!
+ 1 file changed, 3 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add . && git commit -m'hehe' && git push origin main
+[main c8415b4] hehe
+ 2 files changed, 4 insertions(+), 13 deletions(-)
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (27/27), 2.24 KiB | 764.00 KiB/s, done.
+Total 27 (delta 19), reused 0 (delta 0)
+remote: Resolving deltas: 100% (19/19), completed with 5 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   175c503..c8415b4  main -> main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout count-to-ten
+Switched to branch 'count-to-ten'
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'count to ten in ct10 branch'
+[count-to-ten 9d15a73] count to ten in ct10 branch
+ 1 file changed, 6 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push origin count-to-ten
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.14 KiB | 31.00 KiB/s, done.
+Total 13 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 5 local objects.
+remote: 
+remote: Create a pull request for 'count-to-ten' on GitHub by visiting:
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/pull/new/count-to-ten
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+ * [new branch]      count-to-ten -> count-to-ten
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+error: Your local changes to the following files would be overwritten by checkout:
+        web_developer_job/Chap9/README.md
+Please commit your changes or stash them before you switch branches.
+Aborting
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'...'
+On branch count-to-ten
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'...'
+[count-to-ten 90ac606] ...
+ 1 file changed, 2 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add . && git commit -m'...' && git push origin count-to-ten
+[count-to-ten 7f41f67] ...
+ 1 file changed, 1 insertion(+), 12 deletions(-)
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 947 bytes | 947.00 KiB/s, done.
+Total 11 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 5 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   9d15a73..7f41f67  count-to-ten -> count-to-ten
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'completed count to ten'
+[count-to-ten a327fb5] completed count to ten
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch main
+fatal: A branch named 'main' already exists.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git merge count-to-ten
+Auto-merging web_developer_job/Chap9/app/index.html
+CONFLICT (content): Merge conflict in web_developer_job/Chap9/app/index.html
+Auto-merging web_developer_job/Chap9/README.md
+CONFLICT (content): Merge conflict in web_developer_job/Chap9/README.md
+Automatic merge failed; fix conflicts and then commit the result.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add .
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -m'merge count-to-ten into main'
+[main cc43efe] merge count-to-ten into main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push origin main
+Enumerating objects: 25, done.
+Counting objects: 100% (25/25), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (13/13), 1.26 KiB | 1.26 MiB/s, done.
+Total 13 (delta 9), reused 0 (delta 0)
+remote: Resolving deltas: 100% (9/9), completed with 6 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   c8415b4..cc43efe  main -> main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch count-to-fifteen
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout count-to-fifteen
+Switched to branch 'count-to-fifteen'
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -am'counted to 13'
+[count-to-fifteen f1f596d] counted to 13
+ 1 file changed, 4 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push origin count-to-fifteen
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 525 bytes | 525.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: 
+remote: Create a pull request for 'count-to-fifteen' on GitHub by visiting:
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/pull/new/count-to-fifteen
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit:
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+ * [new branch]      count-to-fifteen -> count-to-fifteen
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -am'completed the count to 15'
+[count-to-fifteen b246d0d] completed the count to 15
+ 1 file changed, 2 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push origin count-to-fifteen
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 524 bytes | 524.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit:
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   f1f596d..b246d0d  count-to-fifteen -> count-to-fifteen
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ # merge in GUI
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 626 bytes | 626.00 KiB/s, done.
+From https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   cc43efe..074d716  main       -> origin/main
+Updating cc43efe..074d716
+Fast-forward
+ web_developer_job/Chap9/app/index.html | 6 ++++++
+ 1 file changed, 6 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch
+  count-to-fifteen
+  count-to-ten
+  issue_tst1
+* main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git branch -d count-to-fifteen count-to-ten # delete both two branches locally.
+Deleted branch count-to-fifteen (was b246d0d).
+Deleted branch count-to-ten (was a327fb5).
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git add . && git commit -am'remove test numbers.' && git push origin main
+[main c438053] remove test numbers.
+ 2 files changed, 2 insertions(+), 26 deletions(-)
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 580 bytes | 580.00 KiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit:
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   074d716..c438053  main -> main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout -b our-features # create and checkout to another branch in one single move
+Switched to a new branch 'our-features'
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git checkout main
+M       web_developer_job/Chap9/README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git commit -am'hehe! end of course 29!'
+[main 0272e40] hehe! end of course 29!
+ 1 file changed, 4 insertions(+)
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 518 bytes | 518.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+remote: 
+remote: GitHub found 3 vulnerabilities on mukoedo1993/CS_courses_mukoedo_Online's default branch (3 high). To find out more, visit
+remote:      https://github.com/mukoedo1993/CS_courses_mukoedo_Online/security/dependabot
+remote: 
+To https://github.com/mukoedo1993/CS_courses_mukoedo_Online
+   c438053..0272e40  main -> main
+(base) zcw@mukoedo1993:~/CS_courses_mukoedo_Online/web_developer_job/Chap9$ 
