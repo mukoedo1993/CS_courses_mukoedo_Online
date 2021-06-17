@@ -2,6 +2,10 @@
 import '../styles/styles.css'
 //END OF 15TH COURSE
 
+
+import Person114 from './modules/Person'
+import Person114_1 from './modules/Person_1'
+
 //start of lecture 20
 if(module.hot) {
     module.hot.accept() // accept hot updates if it makes sense to accept that.
@@ -62,5 +66,28 @@ let john2 =new Person("John Doe", "blue");  //create a new object using our Pers
 john2.greet();
 
 
-let jane2 = new Person("Jane Smith", "green");
+let jane2 = new Person("Jane Smiths", "green");
 jane2.greet()
+
+
+// course 43
+
+let john114_1 = new Person114("John Does1", "red");
+john114_1.greet()
+
+
+let john114_2 = new Person114_1("Yiyiyo Koyiyo", "bloodred");
+john114_2.greet()
+
+
+
+// inheritance
+class Adult extends Person114_1 {
+       payTaxes() {
+           console.log(this.name + " now owes zero taxes. ")
+       }
+}
+
+let jane114_3 = new Adult("Jane Smith114_3", "bloodgreen")
+jane114_3.greet()
+jane114_3.payTaxes()

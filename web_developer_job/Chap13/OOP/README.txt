@@ -8,5 +8,13 @@ Object: an entity that has data and behavior.
 resemblance: noun and verb
 
 
+
+
+
 Method:
 A function contained by an object is no longer a function, but a method.
+
+
+--------------------------------------------------------------------------------------------
+43rd course:
+separate js code into separate files.
