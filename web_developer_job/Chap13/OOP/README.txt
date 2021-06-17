@@ -1,4 +1,4 @@
-Q1: What is Object-Oriented programming?
+Q1: What is Object-Oriented programming(OOP)?
 
 Stop thinking in terms of individual variables and functions.
 
