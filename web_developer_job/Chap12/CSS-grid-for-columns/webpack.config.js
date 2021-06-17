@@ -6,8 +6,6 @@ const postCSSPlugins = [
     require('postcss-mixins'), // LECTURE 21 NEW LINE!!!!!!!!!
     require('postcss-simple-vars'),
     require('postcss-nested'),
-    require('postcss-hexrgba'),
-
     require('autoprefixer')
 ]
 //end of LECTURE 15

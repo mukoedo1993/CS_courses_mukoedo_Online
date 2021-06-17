@@ -1,0 +1,43 @@
+.feature-item{
+   
+    position: relative;
+    padding-bottom: 2.5rem;
+padding-left: 0;
+    @mixin atSmall{
+ padding-left:94px;
+
+    }
+    padding-bottom: 2.5rem;
+ &__icon {
+     display: block;/*https://www.w3schools.com/cssref/pr_class_display.asp
+     block	Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+     margin: 0 auto;
+     @mixin atSmall{
+       
+     position: absolute;
+    left: 0;
+     }
+   
+
+ }
+
+ &__title {
+     font-size: 1.6rem; /*30px*/
+     font-weight: 300;
+     margin-top: .7em;
+     margin-bottom: .8rem;
+     margin-left: 0;
+     text-align: center;
+    
+
+     @mixin atSmall {
+         text-align: left;
+         margin-top: 1em;
+         font-size: 1.875rem;
+     }
+ }
+
+
+}
+
+ 

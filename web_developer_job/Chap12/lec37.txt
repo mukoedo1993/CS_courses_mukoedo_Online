@@ -1,0 +1,14 @@
+Hexadecimal to RGBA Color In The Next Lesson
+Hello everyone,
+
+In the next video you'll see me use a package called postcss-hexrgba so that PostCSS can automatically convert our hexadecimal color code into an rgba value. This has long been one of my favorite packages, however, as I'm writing this, February 3rd of 2021, the package has not been updated to work with PostCSS version 8.  As I'm writing this the package sits at version 2.0.1; if it has been updated beyond that, there's a good chance the author of the package fixed it and you can follow the next lesson verbatim.
+
+However, for the time being, please skip that process of using our $mainBlue variable inside an rgba() call. Instead, if you wanted to use our blue value at 30 percent opacity, you could simply spell out the color like this:
+
+background-color: rgba(47, 85, 114, .3);
+I'm leaving my usage of the postcss-hexrgba package in the video lesson because I believe there's a good chance the creator of the package will update it in the next few months so that it works with the latest version of PostCSS; in which case we can begin using it again.
+
+Remember, you can always look at the downloadable zip file for each lesson as a reference of working code.
+
+Thanks!
+Brad
