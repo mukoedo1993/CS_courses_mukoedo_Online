@@ -1,0 +1,52 @@
+.section-title {
+    /*a much larger font-size: 60px*/
+    font-size: 2.55rem;
+
+    font-weight: 300;
+    text-align: center; 
+
+
+    @mixin atSmall {
+        font-size: 3.75rem;
+    }
+
+    /*start icon positioned next to the title*/
+
+    strong {
+        font-weight: 500; /*only strong is not enough. We also need to overwrite font-weight here.*/
+    }
+
+
+
+
+    &--blue{
+        color: $mainblue;
+    }
+    /*modify the image of svg star*/
+    &__icon{
+       
+        display:block;
+        /*drop the text after it into the new line.*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .6rem;
+
+        @mixin atSmall {
+
+            /*It will push the icon down 8 pixels.*/
+            position: relative;
+            top: 8px;
+
+
+
+
+            margin-right: 0.5rem;
+            margin-left: 0;
+            margin-bottom: 0; /*undo on the larger screen*/
+            display:inline-block; 
+            /*So, on larger screen, the star won't drop.*/
+        }
+    }
+
+
+}
