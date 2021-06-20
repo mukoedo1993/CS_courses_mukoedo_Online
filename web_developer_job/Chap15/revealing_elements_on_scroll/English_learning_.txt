@@ -1,0 +1,8 @@
+pull up: check
+
+deal-breaker:
+(in business and politics) a factor or issue which, if unresolved during negotiations, would cause one party to withdraw from a deal.
+
+
+throttling process:
+In software, a throttling process, or a throttling controller as it is sometimes called, is a process responsible for regulating the rate at which application processing is conducted, either statically or dynamically.
