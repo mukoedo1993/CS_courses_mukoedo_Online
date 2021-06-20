@@ -50,4 +50,4 @@ reusable class for different threshold percentage and different selectors.
 ----------------------------------------------------------------------
 
 
-course 48th
+course 48th && 49th && 50th && 51st
