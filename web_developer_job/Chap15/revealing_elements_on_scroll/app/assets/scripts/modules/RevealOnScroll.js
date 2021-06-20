@@ -1,9 +1,16 @@
-import throttle from 'lodash/throttle'
+import throttle from 'lodash/throttle' // run our function continually every 200ms
+
+import debounce from 'lodash/debounce' // only do sth once after resizing and wait for a given time (of ms)
 
 class RevealOnScroll {
-    constructor() {
-        this.itemsToReveal = document.querySelectorAll(".feature-item")// select all elements
+    constructor(els, thresholdPercent) { // reusable class.
 
+        this.thresholdPercent = thresholdPercent
+        
+        this.itemsToReveal = els
+        //this.itemsToReveal = document.querySelectorAll(".feature-item")// select all elements
+
+        this.browserHeight = window.innerHeight
 
         this.hideInitially()
         this.scrollThrottle = throttle(this.calcCaller, 200).bind(this)//200ms
@@ -18,6 +25,14 @@ class RevealOnScroll {
 
     events() {
         window.addEventListener("scroll", this.scrollThrottle)
+
+
+        //However, notice that resize is not very efficient. It will fire up resize events many many times.
+        // But we only need to let it to fire up at the end of resizing.
+        window.addEventListener("resize", debounce(() => {
+            console.log("Resize just ran") // If we keep resizing, nothing will be printed on the console.
+            this.browserHeight = window.innerHeight // window.innerHeight: e.offsetTop: total page height  
+        }, 333))
         }
 
 
@@ -33,16 +48,21 @@ class RevealOnScroll {
 
 
     calculateIfScrolledTo(el) {
-        //console.log(el.getBoundingClientRect().y) //what is getBoundingCLientRect
 
+
+        if(window.scrollY + this.browserHeight > el.offsetTop){    
+            // window.scrollY: how far away it is from the top of your page
+            // el.offsetTop: 
+
+        console.log("Element was calculated")
+        let scrollPercent = (el.getBoundingClientRect().y / this.browserHeight) * 100
+                      //console.log(el.getBoundingClientRect().y) //what is getBoundingCLientRect
         // Answer: It measures how far the top edge of element div from the top edge of
         // browser's top viewport.
 
 
-        console.log("Element was calculated")
-        let scrollPercent = (el.getBoundingClientRect().y / window.innerHeight) * 100
 
-        if (scrollPercent < 75 ) {
+        if (scrollPercent < this.thresholdPercent ) { 
             el.classList.add("reveal-item--is-visible")
 
             el.isRevealed = true
@@ -51,6 +71,10 @@ class RevealOnScroll {
                 window.removeEventListener("scroll", this.scrollThrottle)
             }
         }
+
+
+        }
+
     }
 
     hideInitially() {

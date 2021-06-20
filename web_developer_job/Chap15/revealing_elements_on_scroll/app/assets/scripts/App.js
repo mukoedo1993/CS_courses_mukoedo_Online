@@ -7,8 +7,8 @@ import MobileMenu from './modules/MobileMenu'
 
 import RevealOnScroll from './modules/RevealOnScroll'
 
-
-let revealOnScroll = new RevealOnScroll()
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 75) //made it work on
+new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 
 let mobileMenu = new MobileMenu();
 

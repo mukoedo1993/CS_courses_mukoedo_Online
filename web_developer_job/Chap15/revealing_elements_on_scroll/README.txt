@@ -25,8 +25,29 @@ Every 100ms we scroll it...
 
 lodash: industry standard
 npm install lodash #lodash is not a process that makes our workflow or development process easier,
-# rather it's a package that we actually want to send it alone to our visitor.
+rather, it's a package that we actually want to send it alone to our visitor.
 
 
 ----------------------------------------------------------------------
+
+course 51st:
+If the scroll is moved near the top of the hidden part, then element was started to be calculated.
+Once every element has been revealed, then it will stop listen to the new event, and console will not log new
+information.
+//window.innerHeight: size of viewport of current browser in pixel.
+//The HTMLElement.offsetTop read-only property returns the distance of the outer border of the current element relative to the inner border of the top of the offsetParent node.
+/*
+offsetParent:
+The HTMLElement.offsetParent read-only property returns a reference to the element which is the closest (nearest in the containment hierarchy) positioned ancestor element.
+ If there is no positioned ancestor element, the nearest ancestor td, th, table will be returned, or the body if there are no ancestor table elements either.
+*/
+
+...
+Technically, we could enhance our efficiency even further by storing our elements top offset in memory.
+The idea is, any time you can avoid asking the browser for fresh data, that's a performance win.
+
+reusable class for different threshold percentage and different selectors.
+----------------------------------------------------------------------
+
+
 course 48th
