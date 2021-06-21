@@ -1,0 +1,33 @@
+html {
+    scroll-behavior: smooth; /*so when we click a hyperlink, it smoothly scroll to the destination. course 54th*/
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
+* { /*wildcard: select every single elements on the page*/
+    box-sizing: border-box;
+    /*
+    LEC 26:
+    Web browser will honor the padding-right. width will still be calculated, but it will be calculated
+    after considering padding-right.
+    Set border-box globally could make our life much better.
+    */
+}
+
+
+
+a {
+    color: $mainOrange;
+}

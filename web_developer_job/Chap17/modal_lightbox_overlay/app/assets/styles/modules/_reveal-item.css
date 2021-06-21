@@ -1,0 +1,13 @@
+.reveal-item{
+    opacity: 0;
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    /*
+    So, it will start at 1.15 size, and then become smaller and smaller, until normal size.
+    */
+    transform: scale(1.15);
+
+    &--is-visible{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

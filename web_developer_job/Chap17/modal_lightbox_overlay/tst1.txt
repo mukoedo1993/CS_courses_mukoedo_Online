@@ -1,0 +1,22 @@
+
+ /*
+           A bad example:
+           A: Selecting elements from the DOM
+           B: Event handling
+           C: Defining functionality
+           spaghetti code
+           dirty, flithy mess.
+           */
+
+
+           
+/*
+class MobileMenu {
+    constructor() {
+       document.querySelector(".site-header__menu-icon").addEventListener("click", function() {
+           console.log("The top right icon was clicked.");
+          
+    })
+ }
+}
+*/
