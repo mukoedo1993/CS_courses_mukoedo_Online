@@ -14,4 +14,3 @@ If we have scrolled down but not so far...
 custom attribute begins with data and a dash.
 
 highlight links with orange when scrolled to it.
-
