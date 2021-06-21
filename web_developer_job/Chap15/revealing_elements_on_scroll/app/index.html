@@ -36,9 +36,9 @@
       </div>
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#our-beginning">Our Beginning</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
+            <li><a href="#features" id="features-link">Features</a></li>
+            <li><a href="#testimonials" id="testimonials-link">Testimonials</a></li>
           </ul>
         </nav>
       </div>
@@ -84,7 +84,13 @@
   </div>
   <!--class="large-hero"-->
 
-  <div id="our-beginning" class="page-section">
+  <div id="our-beginning" class="page-section" data-matching-link="#our-beginning-link">
+    <!--
+      LEC. 53rd,
+      When this area got scrolled to, we used the div's custom attribute, and we give that target element a modifier css class
+      that makes it yellow.
+    -->
+
     <div class="wrapper">
       <h2 class="headline headline--centered headlne--light
        headline--b-margin-small">
@@ -165,7 +171,7 @@
 
 
   <div id="features" class="page-section
-  page-section--blue">
+  page-section--blue" data-matching-link="#features-link">
     <div class="wrapper">
 
       <h2 class="section-title"> <img class="section-title__icon" src="assets/images/icons/star.svg"> Our
@@ -224,7 +230,7 @@
     </div>
   </div>
 
-  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-large">
+  <div id="testimonials" class="page-section page-section--testimonials page-section--no-b-padding-until-large" data-matching-link="#testimonials-link">
     <div class="wrapper wrapper--no-padding-until-large">
       <!--ONLY Use middle 1200 px of the screen for its content.-->
 

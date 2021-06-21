@@ -5,4 +5,9 @@ deal-breaker:
 
 
 throttling process:
-In software, a throttling process, or a throttling controller as it is sometimes called, is a process responsible for regulating the rate at which application processing is conducted, either statically or dynamically.
+In software, a throttling process, or a throttling controller as it is sometimes called, is a process responsible for regulating the rate at which application processing is conducted, either statically 
+or dynamically.
+
+
+
+Teleportation is the hypothetical transfer of matter or energy from one point to another without traversing the physical space between them. 

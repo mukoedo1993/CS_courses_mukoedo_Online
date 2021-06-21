@@ -76,6 +76,10 @@ class RevealOnScroll {
         }
 
     }
+    //end of the function calculateIfScrolledTo(el)
+
+
+
 
     hideInitially() {
         this.itemsToReveal.forEach(el => {
@@ -85,6 +89,7 @@ class RevealOnScroll {
           })
            this.itemsToReveal[this.itemsToReveal.length - 1].isLastItem = true //It will count how many elements in the collection
            // last element in our array
+           // by default is false.
         }
         
 }
