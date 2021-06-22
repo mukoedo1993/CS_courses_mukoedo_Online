@@ -1,0 +1,16 @@
+document.querySelectorAll(".open-modal").forEach(el => {
+    el.addEventListener("click", e => {
+        e.preventDefault()
+        import('./modules/Modal').then( x => {
+            modal = new x.default()
+        }
+        ).catch(() => console.log("There was a problem...")) // Once we have imported the Modal, we want to create a new instance of the class.
+        //promise: LECTURE 57th
+        //It might take thousands of ms to import the file...
+        // If everything is well, then the function, then() we provide will get called. However, if there is a problem in the file, never load, such as an error, catch() will be run.
+        // then, catch get called.
+        //
+
+
+    })
+})
