@@ -2,7 +2,7 @@
 import '../styles/styles.css'
 //END OF 15TH COURSEb
 
-import 'lazysizes' //58TH COURSE
+import 'lazysizes'
 
 
 import MobileMenu from './modules/MobileMenu'

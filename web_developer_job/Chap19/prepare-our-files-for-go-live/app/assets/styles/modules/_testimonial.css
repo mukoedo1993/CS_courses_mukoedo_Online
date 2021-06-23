@@ -1,0 +1,58 @@
+.testimonial{
+    background-color: rgba(255, 255, 255, .8);
+
+    padding: 0 18px 1px 18px;
+  
+    margin-bottom: 98px;
+ 
+
+
+    @mixin atLarge {
+       margin-bottom:0;
+        padding: 0 1.8125rem 1px 1.8125rem;
+
+    }
+  
+    &--last {
+      margin-bottom: -1rem;
+
+      @mixin atLarge {
+          margin-bottom: 0;
+      }
+      
+    }
+
+    &__photo{
+       
+        border-radius: 50%;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        margin-top: 0;
+        margin-bottom: -80px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -80px;
+        border: 6px solid;
+        border-color:rgba(255, 255, 255, .8);
+        
+    }
+
+
+    &__title {
+        color: $mainblue;
+        text-align:center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__subtitle {
+        color: $mainOrange;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        margin-top: .25rem 0 1rem 0;
+    }
+}

@@ -17,7 +17,7 @@ npm install lazysizes # This is a package we want our visitor to download: direc
 import lazysizes
 ```
 ```
-<img class="lazyload" data-srcset=...>
+<img class="lazyload" data-srcset...>
 ```
 You could apply lazyload to svg file, but they are so small... 
 
