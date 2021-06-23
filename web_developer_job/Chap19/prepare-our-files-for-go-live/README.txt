@@ -1,26 +1,15 @@
-FROM SEC. 57TH
+FROM SEC. 58TH
 --------------------------------
-Improve site speed:
-Lazy Loading
-
-What is Lazy Loading? 
-Do we really download images at the bottom of page when we still scroll at the
-top of page?
-lazy downloading:
-we are only ready to download images when we are ready to scroll down.
-
+Preparing Our Sites for Go Live:
+dist folder for public:
+build process
 ```
-npm install lazysizes # This is a package we want our visitor to download: direct dependency not dev dependency
+npm run dev # When we want to work our process
 ```
 
 ```
-import lazysizes
+npm run build # When we want to actually publich our process. It will run once, generate automatic copy.
 ```
-```
-<img class="lazyload" data-srcset...>
-```
-You could apply lazyload to svg file, but they are so small... 
-
-In our case, only three bottommost images will not be loaded if we scroll from the very top.
 --------------------------------
-SEC. 58TH
+SEC 59TH & 60TH
+60th <- line 55th 1min

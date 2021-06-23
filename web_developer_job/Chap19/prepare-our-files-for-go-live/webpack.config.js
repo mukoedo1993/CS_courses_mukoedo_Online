@@ -1,3 +1,5 @@
+const currentTask = process.env.npm_lifecycle_event // LECTURE 59 
+
 const path = require('path') // import path (which is a part of nodejs lib.)
 
 //LECTURE 15
@@ -10,7 +12,56 @@ const postCSSPlugins = [
 ]
 //end of LECTURE 15
 
-module.exports = {  // When webpack loads this file, it knows the JS object we just created is what should be exported and used.
+// same for dev and build
+let config = {
+
+  entry: './app/assets/scripts/App.js', // It points to the poath of the JS file we want webpack to watch, process and bundle.
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", {loader: 'postcss-loader', options: {postcssOptions: {plugins: postCSSPlugins}}}],
+      },
+      {
+        test: /\.(png|jpg)$/, //course 32nd
+loader: 'url-loader' // course 32nd
+      }
+    ],
+  }
+}
+
+if ( currentTask == 'dev') {
+  config.output = {
+    
+      filename: 'bundled.js',
+      path: path.resolve(__dirname, 'app')
+  
+  }
+
+  config.devServer = {
+    before: function(app, server){
+      server._watch('./app/**/*.html')
+    },  
+    contentBase: path.join(__dirname, 'app'),
+    hot: true, 
+    port: 3000,
+    host: '0.0.0.0' 
+  }
+
+  config.mode = 'development'
+}
+
+if ( currentTask == 'build') {
+  config.output = {
+      filename: 'bundled.js',
+      path: path.resolve(__dirname, 'dist') 
+  }
+
+  config.mode = 'production'
+}
+
+let deleteMeLater = {  // When webpack loads this file, it knows the JS object we just created is what should be exported and used.
 
     //START OF LECTURE 15 NEW PART:
     module: {
@@ -27,9 +78,6 @@ module.exports = {  // When webpack loads this file, it knows the JS object we j
         ],
       },
     //END OF LECTURE 15.
-
-
-    entry: './app/assets/scripts/App.js', // It points to the poath of the JS file we want webpack to watch, process and bundle.
 
     // START OF LECTURE 20
     devServer : {
@@ -63,3 +111,9 @@ module.exports = {  // When webpack loads this file, it knows the JS object we j
     //watch: true //LECTURE 20
 
 }// It should be exported for use.
+
+
+
+
+
+module.exports = config //course 59TH
