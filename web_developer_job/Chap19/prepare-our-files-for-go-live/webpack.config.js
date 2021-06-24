@@ -1,68 +1,75 @@
-const currentTask = process.env.npm_lifecycle_event // LECTURE 59 
+// let cssConfig = {
+//..."css-loader?url=false"...
+//}
 
-const path = require('path') // import path (which is a part of nodejs lib.)
+//The part above is very important. 
 
-//LECTURE 15
+
+const currentTask = process.env.npm_lifecycle_event
+const path = require('path')
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+
 const postCSSPlugins = [
-    require('postcss-import'),//lecture 16 new line!!!!!!!!!!!!!
-    require('postcss-mixins'), // LECTURE 21 NEW LINE!!!!!!!!!
-    require('postcss-simple-vars'),
-    require('postcss-nested'),
-    require('autoprefixer')
+  require('postcss-import'),
+  require('postcss-mixins'),
+  require('postcss-simple-vars'),
+  require('postcss-nested'),
+  // If in the future the creator of the postcss-hexrgba package
+  // releases an update (it is version 2.0.1 as I'm writing this)
+  // then it will likely work with PostCSS V8 so you can uncomment
+  // the line below and also install the package with npm.
+  //require('postcss-hexrgba'),
+  require('autoprefixer')
 ]
-//end of LECTURE 15
 
-// same for dev and build
+let cssConfig = {
+  test: /\.css$/i,
+  use: ["css-loader?url=false", { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } }]
+}
+
 let config = {
-
-  entry: './app/assets/scripts/App.js', // It points to the poath of the JS file we want webpack to watch, process and bundle.
-
+  entry: './app/assets/scripts/App.js',
   module: {
     rules: [
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader", {loader: 'postcss-loader', options: {postcssOptions: {plugins: postCSSPlugins}}}],
-      },
-      {
-        test: /\.(png|jpg)$/, //course 32nd
-loader: 'url-loader' // course 32nd
-      }
-    ],
+      cssConfig
+    ]
   }
 }
 
-if ( currentTask == 'dev') {
+if (currentTask == 'dev') {
+  cssConfig.use.unshift('style-loader')
   config.output = {
-    
-      filename: 'bundled.js',
-      path: path.resolve(__dirname, 'app')
-  
+    filename: 'bundled.js',
+    path: path.resolve(__dirname, 'app')
   }
-
   config.devServer = {
-    before: function(app, server){
+    before: function(app, server) {
       server._watch('./app/**/*.html')
-    },  
+    },
     contentBase: path.join(__dirname, 'app'),
-    hot: true, 
+    hot: true,
     port: 3000,
-    host: '0.0.0.0' 
+    host: '0.0.0.0'
   }
-
   config.mode = 'development'
 }
 
-if ( currentTask == 'build') {
+if (currentTask == 'build') {
+  cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   config.output = {
-      filename: '[name].[chunkhash].js',
-      chunkFilename: '[name].[chunkhash].js',
-      path: path.resolve(__dirname, 'dist') 
+    filename: '[name].[chunkhash].js',
+    chunkFilename: '[name].[chunkhash].js',
+    path: path.resolve(__dirname, 'dist')
   }
-
   config.mode = 'production'
   config.optimization = {
-    splitChunks: {chunks: 'all'}
+    splitChunks: {chunks: 'all'},
+    minimize: true,
+    minimizer: [`...`, new CssMinimizerPlugin()]
   }
+  config.plugins = [new CleanWebpackPlugin(), new MiniCssExtractPlugin({filename: 'styles.[chunkhash].css'})]
 }
 
-module.exports = config //course 59TH
+module.exports = config
