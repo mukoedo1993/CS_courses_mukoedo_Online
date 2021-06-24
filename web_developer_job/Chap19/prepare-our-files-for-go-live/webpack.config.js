@@ -10,6 +10,8 @@ const path = require('path')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin') // course 62nd
+const fse = require('fs-extra') // let's leverage this package to search for any HTML file. course 63rd
 
 const postCSSPlugins = [
   require('postcss-import'),
@@ -24,13 +26,38 @@ const postCSSPlugins = [
   require('autoprefixer')
 ]
 
+class RunAfterCompile{
+  /*copy images... course 63rd*/
+  apply(compiler) {
+    compiler.hooks.done.tap('Copy images', function() {
+      fse.copySync('./app/assets/images', './dist/assets/images') //copy files from the lhs parameter folder to the rhs parameter
+                                                                  // folder.
+    })
+  }
+}
+
 let cssConfig = {
   test: /\.css$/i,
   use: ["css-loader?url=false", { loader: "postcss-loader", options: { postcssOptions: { plugins: postCSSPlugins } } }]
 }
 
+let pages = fse.readdirSync('./app').filter( function(file) {
+  return file.endsWith('.html')
+}).map(function(page) {
+  return new HtmlWebpackPlugin({
+    filename: page,
+    template: `./app/${page}`
+  })
+}) /*
+readdirSync read every single file in this folder.
+
+map will generate a new array in this array.
+we want an array with multiple html file names.
+*/
+
 let config = {
   entry: './app/assets/scripts/App.js',
+  plugins: pages,//course 62nd
   module: {
     rules: [
       cssConfig
@@ -57,6 +84,17 @@ if (currentTask == 'dev') {
 }
 
 if (currentTask == 'build') {
+  config.module.rules.push({
+    test: /\.js$/,
+    exclude: /(node_modules)/, //ignore the node module folder
+    use: {
+      loader: 'babel-loader',
+      options: {
+        presets: ['@babel/preset-env']
+      }
+    }
+  })
+
   cssConfig.use.unshift(MiniCssExtractPlugin.loader)
   config.output = {
     filename: '[name].[chunkhash].js',
@@ -69,7 +107,10 @@ if (currentTask == 'build') {
     minimize: true,
     minimizer: [`...`, new CssMinimizerPlugin()]
   }
-  config.plugins = [new CleanWebpackPlugin(), new MiniCssExtractPlugin({filename: 'styles.[chunkhash].css'})]
+
+  config.plugins.push(new CleanWebpackPlugin(), new MiniCssExtractPlugin({filename: 'styles.[chunkhash].css'}),
+                      new RunAfterCompile()
+  )
 }
 
 module.exports = config

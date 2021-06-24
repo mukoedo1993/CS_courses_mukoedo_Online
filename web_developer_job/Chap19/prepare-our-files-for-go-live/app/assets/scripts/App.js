@@ -22,7 +22,7 @@ new RevealOnScroll(document.querySelectorAll(".feature-item"), 75) //made it wor
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 
 
-alert("nimasile!!!!")
+
 //let mobileMenu = //commented in course 57 // If your website is pretty complex, then you are recommended to download event-emitter...
 new MobileMenu();
 let modal // until here, the type for modal is undefined...

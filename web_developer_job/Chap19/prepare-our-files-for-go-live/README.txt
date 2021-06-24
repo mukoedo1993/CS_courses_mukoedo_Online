@@ -10,7 +10,7 @@ npm run dev # When we want to work our process
 ```
 npm run build # When we want to actually publich our process. It will run once, generate automatic copy.
 ```
-
+--------------------------------
 course 60th:
 vendor code: code we didn't write
 npm run build:
@@ -38,7 +38,33 @@ The benefit of the former approach is that a Development Server can pick that up
 
 Any other lookup will go through webpack and it will try to evaluate the url and @import expressions.
  To disable this default behavior, set css-loader url: false and import: false through the loader options.
- css-loader url
+
 --------------------------------
-SEC 59TH & 60TH
-60th <- line 55th 1min time stamp
+course 62ND
+```
+npm install html-webpack-plugin --save-dev
+```
+rule of thumb
+more than 10 pages: you need a static site generator
+less than 10 pages: you don't need a static site generator
+--------------------------------
+course 63RD
+multiple html files in one project.
+```
+npm install fs-extra --save-dev 
+```
+copy our images in the build task.
+So you and I as Web developers are always going to be using the newest version of our web browser,
+meaning we will have access to the latest and greatest Javascript features.
+...
+We don't need to change our way of writing JS code, but our code will be applied to wider range of browser holders.
+
+```
+npm install @babel/core @babel/preset-env babel-loader --save-dev #
+```
+
+
+
+--------------------------------
+SEC 59TH & 60TH & 61ST & 62ND & 63RD
+
