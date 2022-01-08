@@ -18,6 +18,8 @@ Sidenote:
 treated as partial file. This file is prepared as being imported.
 (ii): Import is a css native feature, but we don't want our web browsers to download multiple css files. Instead, we want postcss
 and webpack to see these import lines, and replace these lines with contents from these source files word by word.
+(iii): Our main/entry CSS files doesn't contain any CSS styles by itself, but it works as a receipe which points to ingredients files in other places,
+which make our files super organized.
 
 2. Identify patterns in design
 
