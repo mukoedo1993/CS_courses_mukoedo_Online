@@ -14,7 +14,7 @@ Lesson Overview:
 1. File architecture
 
 Sidenote:
-(i): A programming file that starts with snakecase is a file that should be 
+(i): A programming file that starts with  is a file that should be 
 treated as partial file. This file is prepared as being imported.
 (ii): Import is a css native feature, but we don't want our web browsers to download multiple css files.
 
