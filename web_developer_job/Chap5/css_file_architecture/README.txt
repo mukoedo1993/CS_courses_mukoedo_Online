@@ -20,6 +20,8 @@ treated as partial file. This file is prepared as being imported.
 and webpack to see these import lines, and replace these lines with contents from these source files word by word.
 (iii): Our main/entry CSS files doesn't contain any CSS styles by itself, but it works as a receipe which points to ingredients files in other places,
 which make our files super organized.
+(iv): Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets
+only the styles that need normalizing.
 
 2. Identify patterns in design
 
