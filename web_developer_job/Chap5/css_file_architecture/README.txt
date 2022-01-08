@@ -16,7 +16,8 @@ Lesson Overview:
 Sidenote:
 (i): A programming file that starts with  is a file that should be 
 treated as partial file. This file is prepared as being imported.
-(ii): Import is a css native feature, but we don't want our web browsers to download multiple css files.
+(ii): Import is a css native feature, but we don't want our web browsers to download multiple css files. Instead, we want postcss
+and webpack to see these import lines, and replace these lines with contents from these source files word by word.
 
 2. Identify patterns in design
 
