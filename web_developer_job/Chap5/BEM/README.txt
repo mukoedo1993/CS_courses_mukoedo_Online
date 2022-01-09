@@ -12,6 +12,7 @@ B: block.
 A block is an independent, self-contained and reusable part of our design.
 e.g: the first big hero picture part, four feature feedback parts.
 eg: large-hero
+yellow button reused in our design.
 
 E: Element.
 An element belongs to a block. It cannot be used outside of the block 
@@ -21,6 +22,7 @@ e.g.: large-hero__title large-hero__subtitle...
 M: Modifier:
 A modifier can be used on a block or an element to indicate a change to the
 default state of an object.
+e.g.: btn btn--orange btn__blue btn__large
 
 -- CSS selectors should target elements directly with classes, instead of relying on
 type selectors, descendent selectors, and the cascade.
