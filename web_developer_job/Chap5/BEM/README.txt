@@ -11,10 +11,13 @@ Popular abstract way of thinking about our interface.
 B: block.
 A block is an independent, self-contained and reusable part of our design.
 e.g: the first big hero picture part, four feature feedback parts.
+eg: large-hero
 
 E: Element.
 An element belongs to a block. It cannot be used outside of the block 
 that it belongs to.
+e.g.: large-hero__title large-hero__subtitle...
+
 M: Modifier:
 A modifier can be used on a block or an element to indicate a change to the
 default state of an object.
