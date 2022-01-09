@@ -10,6 +10,8 @@ BEM:
 Popular abstract way of thinking about our interface.
 B: block.
 A block is an independent, self-contained and reusable part of our design.
+e.g: the first big hero picture part, four feature feedback parts.
+
 E: Element.
 An element belongs to a block. It cannot be used outside of the block 
 that it belongs to.
