@@ -13,6 +13,7 @@ large-hero block and button style <--TARGET OF LEC. 19.
 
 ------------------------------------
 Sidenote:
+Why should we use REM:
 rem: Whenever we declare a font size or a padding or margin value, we want to do
 so in terms of rem instead of pixels or percentages or em.
 Everything is relative to the root of the page, i.e., html element.
