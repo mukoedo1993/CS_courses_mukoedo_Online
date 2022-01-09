@@ -22,9 +22,13 @@ and webpack to see these import lines, and replace these lines with contents fro
 which make our files super organized.
 (iv): Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets
 only the styles that need normalizing.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+SEE COURSE 18TH WHAT'S BEM and Complete two blocks.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
 
 2. Identify patterns in design
-
 3. Rules to follow for creating class names and writing our CSS selectors.
 
 
