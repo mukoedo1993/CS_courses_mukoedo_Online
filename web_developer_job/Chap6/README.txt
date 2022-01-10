@@ -21,7 +21,9 @@ completely reload and rerender and repaint the entire page.
 webpack-dev could allow us to update without full page reload.
 It's bundling up our code and then it's injecting that latest code into the browsers memory
 on the fly. Not only is this fast, but it's also convenient when we begin working with JS.
-
+----------------------------------
+It would be nice if you open an modal and you don't need to close it to see any change.
+----------------------------------
 The bundle server made our address available on our address:
  localhost:3000.
 
