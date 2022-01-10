@@ -40,3 +40,12 @@ lec.20
 
 
 ------------------------------------
+	
+6. Quick Webpack Timeout
+20. Webpack Dev Server
+
+
+
+npm install [package-name] –save: When –save is used without -dev, it signifies that the package is core dependency. A core dependency is any package without which the application cannot perform its intended work.
+
+npm install [package-name] –save-dev: When –save-dev is used with npm install, it signifies that the package is a development dependency. A development dependency is any package that absence will not affect the work of the application.
