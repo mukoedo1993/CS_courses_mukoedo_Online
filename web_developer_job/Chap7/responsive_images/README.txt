@@ -4,6 +4,9 @@ INDEPENDENT PART
 In this lesson, we will learn about responsive images.
 
 Q1: What is a responsive image and why do we need it? 
+Responsive image is very similar to traditional image. 
+Traiditional image might be good enough for a large screen, but is too large to download 
+for a smaller screen.
 
 Q2: Example page: Two unique situations (two unique code patterns).
 
