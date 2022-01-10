@@ -16,7 +16,7 @@ npm run dev # Attention! we need to use npm run dev here because we need both we
 #open browser. localhost:3000
 ----------------------------------
 
-Sidenote:a full reload is very expernsive in terms of speed. It forces the web browser to
+Sidenote:a full reload is very expensive in terms of speed. It forces the web browser to
 completely reload and rerender and repaint the entire page.
 webpack-dev could allow us to update without full page reload.
 It's bundling up our code and then it's injecting that latest code into the browsers memory
