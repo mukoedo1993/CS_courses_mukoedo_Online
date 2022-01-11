@@ -17,6 +17,8 @@ Q3: Apply what we've learned - begin adding responsive images to our travel webs
 
 Responsive Image Situations (each situation needs different code)
 1. Art direction & cropping situation <---(PICTURE ELEMENT)
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture
+
 2. Image resolution & file size situation (faster load times) <-(You need to disable cache. See notes/disable_cache.png)
 (For 2, different devices, different browsers have different strategies to decide when they should use which image.)
 e.g.: If you start from a window relatively large, and start to shrink the screen, you'll notice that it'll never use the 
