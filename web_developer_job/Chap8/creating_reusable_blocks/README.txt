@@ -12,6 +12,7 @@ When the browser thinks that this might be a line of text, it wants to leave
 a little bit of room for the bottom part of certain letters that hang below the rule.
 On the contrary, border works well here.*/
 ...
+display: block; /*to treat the image like a div*/
 }
 -----------------------------------------------------------------
 -----------------------------------------------------------------
