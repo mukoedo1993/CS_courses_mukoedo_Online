@@ -38,7 +38,7 @@ different heading styles in diff. heading classes
     <h2 class="headline headline--large headline--orange"...>
     Which one is better?
     second...
-
+    Because the second one is easy-to-understand even after years.
     Block Element Modifier:
 -----------------------------------------------------------------
 font-size
