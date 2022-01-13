@@ -41,5 +41,7 @@ different heading styles in diff. heading classes
 
     Block Element Modifier:
 -----------------------------------------------------------------
+font-size
+font-weight
 -----------------------------------------------------------------
 LEC 25TH
