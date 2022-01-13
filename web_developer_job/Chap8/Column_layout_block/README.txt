@@ -9,6 +9,8 @@ throughout our page.
 
 FOUR-EIGHT SPLIT.
 -----------------------------------------------------------------
+12-columns grid.
+-----------------------------------------------------------------
 Sidenote 1:
 If an element is taller than the element containing it, and it is floated, it will overflow outside of its container.
 Because when we float an element, we take it out of normal flow of our image.
