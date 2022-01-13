@@ -19,6 +19,12 @@ Because when we float an element, we take it out of normal flow of our image.
 1st way: sloppy <- add a <div class="clear-me"></div>. But it's an empty element only for styling purpose. We should avoid it.
 style: .clear-me{clear:both;}
 2nd way: see _row.css
+.row{
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
 -----------------------------------------------------------------
 
 
