@@ -16,7 +16,8 @@ If an element is taller than the element containing it, and it is floated, it wi
 Because when we float an element, we take it out of normal flow of our image.
 
 2 ways to clearfix:
-1st way: sloppy <- add a clear-me div. But it's an empty element only for styling purpose. We should avoid it.
+1st way: sloppy <- add a <div class="clear-me"></div>. But it's an empty element only for styling purpose. We should avoid it.
+style: .clear-me{clear:both;}
 2nd way: see _row.css
 -----------------------------------------------------------------
 
