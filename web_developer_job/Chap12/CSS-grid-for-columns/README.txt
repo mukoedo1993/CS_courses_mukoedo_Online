@@ -16,3 +16,7 @@ grid <-- flexible, easy-to-use
 https://www.youtube.com/watch?v=DJq6R2b0FoE
 --------
 COURSE 41ST
+--------------------------------------------
+li {
+list-style: none; /*remove bullets*/
+}
