@@ -24,7 +24,7 @@ As a programmer, you are always striving for writing most-efficient code.
 To reduce the frequency for calling the function:
 Every 100ms we scroll it...
 
-lodash: industry standard
+lodash: industry standard //for both industry and production
 npm install lodash #lodash is not a process that makes our workflow or development process easier,
 rather, it's a package that we actually want to send it alone to our visitor.
 
