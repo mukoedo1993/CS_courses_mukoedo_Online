@@ -2,7 +2,7 @@ e.g.
 Picture our modal of javascript is 200 or 300 lines of code.
 So imagine you have this sizable bit of code that the user doesn't need...
 
-We want to prevent the user from loading Javascript file until you click the button, Get in Touch.
+We want to prevent the user from loading Javascript unneeded file until you click the button, Get in Touch.
 
 App.js:
 line 30:
