@@ -43,6 +43,7 @@ Any other lookup will go through webpack and it will try to evaluate the url and
 course 62ND
 ```
 npm install html-webpack-plugin --save-dev
+With that plugin, you will not need to include script in your main HTML file, i.e., index.html file.
 ```
 rule of thumb
 more than 10 pages: you need a static site generator
